@@ -10,9 +10,27 @@ body {
 	a {
 		color: #000;
 	}
+	&.hero-img {
+		background: url(../images/hero-img2) #fff no-repeat bottom left;
+		background-size: cover;
+    	height: 100vh;
+	}
+	&.hero-text:after {
+		color: #e8eaef;
+		content: "DESIGNER";
+		position: fixed;
+		z-index: 9;
+		font-size: 240px;
+	    bottom: 50px;
+	    font-weight: 700;
+	    right: -330px;
+	}
 }
 
 .home-page {
+	position: relative;
+	z-index:99;
+	height: calc(100vh - 100px);
 	header {
 		margin-bottom: 50px;
 		.topbar-nav {
@@ -56,5 +74,10 @@ body {
 				color: rgb(51, 51, 51);
 			}
 		}
+	}
+	footer {
+	    bottom: 0;
+		width: calc(100vw - 100px);
+		position: absolute;
 	}
 }
