@@ -23,10 +23,16 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="hero-img hero-text">
+  <body>
+    <!-- Preloader content -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- preloader -END -->
+
     <!-- Main container starts -->
-    <div class="container-fluid home-page">
-      <!-- header - top bar -->
+    <div class="container-fluid main-container light-theme home-page">
+      <!-- header starts -->
       <header class="row">
         <!-- nav bar -->
         <nav class="topbar-nav col-md-9">
@@ -45,20 +51,21 @@
           <h1 class="text-right">ARUN JACOB</h1>
         </div>
       </header>
-      <!-- top bar ENDS-->
+      <!-- header END-->
 
-      <!-- main content -->
-      <div class="row main-content">
-        <div class="col-md-12">
+      <!-- main content starts -->
+      <div class="row main-content hero-image">
+        <div class="col-md-12 hero-title">
           <h1>Product Designer</h1> <br />
           <h2>User Experience  -  Interaction  -  Visual  -  Frontend (dev)</h2>
-          <div class="col-md-5 col-md-offset-6 basic-info">
-            <h3>My name is Arun Jacob,</h3>
-            <p class="hero-descr">with 10 years of experience with design and code. Now working with <span>Petrolink</span>, with a talented team of technologists to innovate their complex interfaces into more intuitive and modern experiences. Previously, was with <span>IdentityMine</span>, where I helped brands such as <span>Microsoft, Intel, Nike, Jeppesen, Trip Advisor, With Me, TMZ etc</span> design new products to meet people’s evolving digital lifestyles.</p>
-            <a href="#" class="more-info-link">more-info</a>
-          </div>
+        </div>
+        <div class="col-md-5 col-md-offset-6 hero-info">
+          <h3>My name is Arun Jacob,</h3>
+          <p class="hero-descr">with 10 years of experience with design and code. Now working with <span>Petrolink</span>, with a talented team of technologists to innovate their complex interfaces into more intuitive and modern experiences. Previously, was with <span>IdentityMine</span>, where I helped brands such as <span>Microsoft, Intel, Nike, Jeppesen, Trip Advisor, With Me, TMZ etc</span> design new products to meet people’s evolving digital lifestyles.</p>
+          <a href="#" class="more-info-link">more-info</a>
         </div>
       </div>
+      <!-- main content END -->
 
       <!-- footer -->
       <footer class="row">
@@ -69,12 +76,27 @@
           <a class="pull-right" href="#">twitter</a>
         </p>
       </footer>
+      <!-- footer END -->
 
     </div>
+    <!-- Main container END -->
+    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- User defined javascript -->
+    <script src="js/script.js"></script>
+    <!-- preloader jqery code -->
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).on('load', function() { // makes sure the whole site is loaded 
+                $('#status').fadeOut(); // will first fade out the loading animation 
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+        //]]>
+    </script>
   </body>
 </html>
