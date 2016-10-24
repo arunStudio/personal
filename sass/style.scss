@@ -39,9 +39,17 @@ body {
 	position: relative;
 	&.light-theme{
 		background-color: #fff ;
+		a,
+		.main-logo h1 {
+			color: #000;
+		}
 	}
 	&.dark-theme {
 		background-color: #2c2c2d;
+		a,
+		.main-logo h1 {
+			color: #fff;
+		}
 	}
 	// homepage - styles
 	&.home-page{

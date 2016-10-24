@@ -23,10 +23,16 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="profile-image hero-text dark-theme">
+  <body>
+    <!-- Preloader content -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- preloader -END -->
+
     <!-- Main container starts -->
-    <div class="container-fluid home-page">
-      <!-- header - top bar -->
+    <div class="container-fluid main-container light-theme portfolio-page">
+      <!-- header starts -->
       <header class="row">
         <!-- nav bar -->
         <nav class="topbar-nav col-md-9">
@@ -45,20 +51,51 @@
           <h1 class="text-right">ARUN JACOB</h1>
         </div>
       </header>
-      <!-- top bar ENDS-->
+      <!-- header END-->
 
-      <!-- main content -->
+      <!-- main content starts -->
       <div class="row main-content">
-        <div class="col-md-12">
-          <h1>Product Designer</h1> <br />
-          <h2>User Experience  -  Interaction  -  Visual  -  Frontend (dev)</h2>
-          <div class="col-md-5 col-md-offset-6 basic-info">
-            <h3>My name is Arun Jacob,</h3>
-            <p class="hero-descr">with 10 years of experience with design and code. Now working with <span>Petrolink</span>, with a talented team of technologists to innovate their complex interfaces into more intuitive and modern experiences. Previously, was with <span>IdentityMine</span>, where I helped brands such as <span>Microsoft, Intel, Nike, Jeppesen, Trip Advisor, With Me, TMZ etc</span> design new products to meet people’s evolving digital lifestyles.</p>
-            <a href="#" class="more-info-link">more-info</a>
+        <div class="col-md-12 product-main-bg">
+
+          <!-- The container 970px starts here -->
+          <div class="container product-container">
+            <header class="product-hero-section wiser-air">
+              <h1 class="product-name col-md-6 col-md-offset-6">WiserAir</h1>
+              <p class="product-intro col-md-6 col-md-offset-6">The goal of this program is to create an innovative home energy monitoring and control platform that enables the services that utilities require while delivering an intuitive and desirable user experience.</p>
+            </header>
+
+            <div class="product-article col-md-12">
+              <h2>Design Process Outlined</h2>
+              <!-- The design process view comes here -->
+
+              <h2>User Research Sessions</h2>
+              <p>We held two user research sessions where we met with 11 people who are current users of different thermostats. We conducted various exercises to understand their underlying needs, desires, and expectations around their thermostat and energy use. They used mobile and device prototypes while we observed and received feedback on the interactions, flows and visual design. We synthesized our learnings as we developed our ideas.</p>
+              <img class="product-images-full" src="images/products/wiserair-user-research.jpg" alt="Wiserair User Research">
+
+              <h2>Main Design goals</h2>
+              <p>Wiser Air transforms Wiser’s partnerships with utility companies, weather forecast providers (DTN) and energy data providers (AutoGrid and EcoFactor) into a simple, compelling experience for users. It turns the complex realities of energy management into something any homeowner will enjoy.<p>
+              <ul>
+                <li>Contextual Intelligence</li>
+                <li>A Platform to Learn and Teach</li>
+                <li>Emotional Appeal</li>
+              </ul>
+
+              <h2>User Interview Session</h2>
+              <blockquote>I’d love to see what the weather is like as I’m walking out the door. If my thermostat can warn me that I need an umbrella that would be great.</blockquote>
+              <blockquote>Most companies make the mistake of giving too much information to the user. Providing the right information is what creates a desirable experience.</blockquote>
+              <blockquote>There’s something really nice about my thermostat knowing my name and starting the day with a personalized message.</blockquote>
+              <blockquote>Users don’t want to constantly tweak and monitor their thermostats. They want to set it and forget it. Things need to happen in the background.</blockquote>
+              <blockquote>Instantaneous feedback on how much energy my AC was using could have saved me hundreds of dollars on my monthly bill.</blockquote>
+
+              <h2>Application Design</h2>
+              <p>We try to capture key elements of the visual and interaction design for the application and the thermostat design. Our work focuses on the “hero moments” of the interaction - the exchanges that people will both use most frequently and those that, while they may be experienced less frequently, have a large impact on the overall experience.</p>
+            </div>
           </div>
+          <!-- 970px END -->
+
         </div>
       </div>
+      <!-- main content END -->
 
       <!-- footer -->
       <footer class="row">
@@ -69,12 +106,27 @@
           <a class="pull-right" href="#">twitter</a>
         </p>
       </footer>
+      <!-- footer END -->
 
     </div>
+    <!-- Main container END -->
+    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- User defined javascript -->
+    <script src="js/script.js"></script>
+    <!-- preloader jqery code -->
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).on('load', function() { // makes sure the whole site is loaded 
+                $('#status').fadeOut(); // will first fade out the loading animation 
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+        //]]>
+    </script>
   </body>
 </html>
