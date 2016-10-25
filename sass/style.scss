@@ -25,32 +25,54 @@ body {
 	    margin:-50px 0 0 -50px; /* is width and height divided by two */
 	}
 
+	// Selection text
+	::selection {
+	    background: #fcf6c3;
+	    color: #ff5c5c;
+	}
+
 	h1, h2, h3, h4 {
 		font-family: 'Montserrat', sans-serif;
 	}
 	a {
-		color: #000;
+		color: #2e3c40;
+	}
+}
+
+// Font for Project Heading
+@font-face {
+    font-family: 'bebasregular';
+    src: url('fonts/BEBAS___-webfont.eot');
+    src: url('fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BEBAS___-webfont.woff') format('woff'),
+         url('fonts/BEBAS___-webfont.ttf') format('truetype'),
+         url('fonts/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media only screen and (min-width: 1300px) {
+	.container {
+		width: 1250px;
 	}
 }
 
 .main-container {
-	padding: 50px 50px 0;
+	padding: 50px 0;
 	min-height: 100vh;
 	position: relative;
-	&.light-theme{
-		background-color: #fff ;
-		a,
-		.main-logo h1 {
-			color: #000;
-		}
-	}
-	&.dark-theme {
-		background-color: #2c2c2d;
-		a,
-		.main-logo h1 {
-			color: #fff;
-		}
-	}
+	// &.light-theme{
+	// 	background-color: #fff ;
+	// 	a {
+	// 		color: #000;
+	// 	}
+	// }
+	// &.dark-theme {
+	// 	background-color: #2c2c2d;
+	// 	a {
+	// 		color: #fff;
+	// 	}
+	// }
 	// homepage - styles
 	&.home-page{
 		background: url(../images/hero-img-sml.jpg) #fff no-repeat bottom left;
@@ -63,17 +85,36 @@ body {
 		margin-bottom: 50px;
 		.topbar-nav {
 			ul {
-				margin-left: 50px;
+				height: 2em;
 				li {
 					text-transform: uppercase;
-					margin-right: 20px;
+					letter-spacing: 1px;
+					font-size: 12px;
+					margin-right: 50px;
+					font-weight: 300;
+					font-family: 'Dosis', sans-serif;
+					a {
+						padding: 0px;
+						border-bottom: 1px solid transparent;
+						transition: all .15s;
+						color: #2e3c40;
+						line-height: 3em;
+					}
+					a:hover, a.active {
+						text-decoration: none;
+						border-bottom: 1px solid #2e3c40;
+						padding-bottom: 7px;
+						transition: all .15s;
+					}
 				}
 			}
 		}
 		.main-logo h1{
-			font-size: 16px;
-			font-weight: 700;
+			font-size: 2em;
+			font-weight: 400;
 			margin: 0;
+			color: #ff5c5c;
+			font-family: 'bebasregular', sans-serif;
 		}
 	}
 	// main-content styles
@@ -96,11 +137,81 @@ body {
 				margin-top: 0;
 			}
 		}
+		// Product page styles
+		.product-container{
+			font-size: 14px;
+			header.product-head {
+				margin: 150px 0 200px;
+				h1.product-name {
+					font-size: 6.5em;
+					color: #2e3c40;
+					text-transform: uppercase;
+					font-family: 'bebasregular', sans-serif;
+				}
+			}
+			.product-article {
+				.product-intro {
+					// font-family: 'Playfair Display', serif;
+					// font-family: 'Old Standard TT', serif;
+					font-family: 'Martel', serif;
+					font-size: 2em;
+					font-weight: 300;
+					margin-bottom: 150px;
+				}
+				.product-role {
+					margin-bottom: 150px;
+					h6{
+						color: #b9b9b9;
+						font-size: 14px;
+						font-family: 'Dosis', sans-serif;
+						text-transform: uppercase;
+					}
+					h5 {
+						font-size: 16px;
+						line-height: 28px;
+					}
+				}
+				.general-content{
+					margin-bottom: 50px;
+					h2,p {
+						margin-top: 0;
+						padding: 30px 0;
+					}
+					h2{
+						font-size: 2.5em;
+						text-transform: uppercase;
+						font-family: 'bebasregular', sans-serif;
+						color: #2e3c40;
+						line-height: 1.25em;
+					}
+					p {
+						line-height: 3.5rem;
+					}
+					ul.service-box {
+						margin-top: 0;
+						padding: 30px;
+						list-style: none;
+						h6 {
+							margin: 0;
+							margin-bottom: 25px;
+							font-size: 14px;
+							text-transform: uppercase;
+						}
+						li{
+							font-family: 'Martel', serif;
+							font-size: 1em;
+							font-weight: 300;
+							line-height: 2em;
+							color: #ff5c5c;
+						}
+					}
+				}
+			}
+		}
 	}
 	// footer styles
 	footer {
 		position: absolute;
 		bottom: 0;
-		width: calc(100vw - 100px);
 	}
 }
