@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Arun Jacob - Product Designer</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- User defined stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Preloader content -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- preloader -END -->
+
+    <!-- Main container starts -->
+    <div class="container-fluid main-container light-theme home-page">
+      <!-- header starts -->
+      <header class="row">
+        <!-- nav bar -->
+        <nav class="topbar-nav col-md-9">
+          <a href="#" class="glyphicon glyphicon-menu-hamburger pull-left ham-menu" aria-hidden="true"></a>
+          <ul class="list-inline">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Approach</a></li>
+            <li><a href="#">Art</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- name logo -->
+        <div class="main-logo col-md-3">
+          <h1 class="text-right">ARUN JACOB</h1>
+        </div>
+      </header>
+      <!-- header END-->
+
+      <!-- main content starts -->
+      <div class="row main-content hero-image">
+        <div class="col-md-12 hero-title">
+          <h1>Product Designer</h1> <br />
+          <h2>User Experience  -  Interaction  -  Information Architecture  -  Frontend (dev)</h2>
+        </div>
+        <div class="col-md-5 col-md-offset-6 hero-info">
+          <h3>My name is Arun Jacob,</h3>
+          <p class="hero-descr">with 10 years of experience with design and code. Now working with <span>Petrolink</span>, with a talented team of technologists to innovate their complex interfaces into more intuitive and modern experiences. Previously, was with <span>IdentityMine</span>, where I helped brands such as <span>Microsoft, Intel, Nike, Jeppesen, Trip Advisor, With Me, TMZ etc</span> design new products to meet people’s evolving digital lifestyles.</p>
+          <a href="#" class="more-info-link">more-info</a>
+        </div>
+      </div>
+      <!-- main content END -->
+
+      <!-- footer -->
+      <footer class="row">
+        <a href="#" class="col-md-6">Download Resume</a>
+        <p class="col-md-6">
+          <a class="pull-right" href="#">facebook</a>
+          <a class="pull-right" href="#">linkedin</a>
+          <a class="pull-right" href="#">twitter</a>
+        </p>
+      </footer>
+      <!-- footer END -->
+
+    </div>
+    <!-- Main container END -->
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- User defined javascript -->
+    <script src="js/script.js"></script>
+    <!-- preloader jqery code -->
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).on('load', function() { // makes sure the whole site is loaded 
+                $('#status').fadeOut(); // will first fade out the loading animation 
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+        //]]>
+    </script>
+  </body>
+</html>

@@ -9,12 +9,11 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- User defined stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet"><!-- User Defined stylesheets -->    
+    <link rel="stylesheet" href="css/fonts-face.css">
 
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Martel:300,400,600|Dosis:300,400,500|Open+Sans:300,400,600,700" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,80 +22,173 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <!-- Preloader content -->
-    <div id="preloader">
-        <div id="status">&nbsp;</div>
-    </div>
-    <!-- preloader -END -->
+  <body class="home-page">
 
-    <!-- Main container starts -->
-    <div class="container-fluid main-container light-theme home-page">
-      <!-- header starts -->
-      <header class="row">
-        <!-- nav bar -->
-        <nav class="topbar-nav col-md-9">
-          <a href="#" class="glyphicon glyphicon-menu-hamburger pull-left ham-menu" aria-hidden="true"></a>
-          <ul class="list-inline">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Approach</a></li>
-            <li><a href="#">Art</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- name logo -->
-        <div class="main-logo col-md-3">
-          <h1 class="text-right">ARUN JACOB</h1>
+    <!-- main container - starts -->
+    <div class="container">
+      <header class="header">
+        <!-- main navigation row -->
+        <div class="row">
+          <!-- main logo -->
+          <div class="col-md-3 main-logo text-left">Arun Jacob</div>
+          <!-- main menu -->
+          <nav class="col-md-9 main-nav text-right">
+            <ul class="list-inline">
+              <li role="presentation" class="active"><a href="#">Home</a></li>
+              <li role="presentation"><a href="#">Case Studies</a></li>
+              <li role="presentation"><a href="#">Art</a></li>
+              <li role="presentation"><a href="#">Journal</a></li>
+            </ul>
+          </nav>
         </div>
+        <!-- main navigation row - end -->
+
+        <!-- main content - about excerpt section -->
+        <div class="row about-excerpt">
+          <div class="col-md-12 hero-title">
+            <h1>Product Designer</h1>
+            <h2>User Experience  -  Interaction  -  Information Architecture  -  Frontend (dev)</h2>
+          </div>
+          <div class="col-md-12 excerpt-container">
+            <p class="hero-descr"> <strong>My name is Arun Jacob,</strong> with 10 years of experience with design and code. Now working with <span>Petrolink</span>, with a talented team of technologists to innovate their complex interfaces into more intuitive and modern experiences. Previously, was with <span>IdentityMine</span>, where I helped brands such as <span>Microsoft, Intel, Nike, Jeppesen, Trip Advisor, With Me, TMZ etc</span> design new products to meet people’s evolving digital lifestyles.</p>
+            <a href="#" class="more-info-link">know more</a>
+          </div>
+        </div>
+        <!-- main content - about excerpt section - ends -->
       </header>
-      <!-- header END-->
+      <!-- header - ends -->
 
-      <!-- main content starts -->
-      <div class="row main-content hero-image">
-        <div class="col-md-12 hero-title">
-          <h1>Product Designer</h1> <br />
-          <h2>User Experience  -  Interaction  -  Information Architecture  -  Frontend (dev)</h2>
-        </div>
-        <div class="col-md-5 col-md-offset-6 hero-info">
-          <h3>My name is Arun Jacob,</h3>
-          <p class="hero-descr">with 10 years of experience with design and code. Now working with <span>Petrolink</span>, with a talented team of technologists to innovate their complex interfaces into more intuitive and modern experiences. Previously, was with <span>IdentityMine</span>, where I helped brands such as <span>Microsoft, Intel, Nike, Jeppesen, Trip Advisor, With Me, TMZ etc</span> design new products to meet people’s evolving digital lifestyles.</p>
-          <a href="#" class="more-info-link">more-info</a>
+      <!-- about section (slide down) -->
+      <div class="row about-section">
+        <div class="col-md-12">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
       </div>
-      <!-- main content END -->
+      <!-- about section (slide down) - end -->
 
-      <!-- footer -->
-      <footer class="row">
-        <a href="#" class="col-md-6">Download Resume</a>
-        <p class="col-md-6">
-          <a class="pull-right" href="#">facebook</a>
-          <a class="pull-right" href="#">linkedin</a>
-          <a class="pull-right" href="#">twitter</a>
-        </p>
+      <!-- case studies row/section -->
+      <div class="row">
+        <div class="col-md-offset-4 col-md-8">
+          <h1>Featured Case Studies</h1>
+          <ul class="case-studies">
+            <li class="project-line">
+              <h2 class="project-name">Schnider WiserAir</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">RedBlack Rebalancing Application</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">iHeart Radio</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Levis</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Shop With Me</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Fusionetics</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Nike+</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Yale 2 You</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Nike Activity Stream</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Jeppesen</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Sling TV</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Pizza Hut</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Intel Never Sleep</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Plex</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">Rhapsody</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+            <li class="project-line">
+              <h2 class="project-name">NCR Sales Advisor</h2>
+              <div class="work-list">
+                <p>IA, UX, UI</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- case studies row/section - end -->
+
+      <!-- find me footer -->
+      <footer>
+        <span>Find Me</span>
+        <ul>
+          <li>LinkedIn</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Facebook</li>
+        </ul>
       </footer>
-      <!-- footer END -->
 
     </div>
-    <!-- Main container END -->
-    
+    <!-- main container - ends -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- User defined javascript -->
-    <script src="js/script.js"></script>
-    <!-- preloader jqery code -->
-    <script type="text/javascript">
-        //<![CDATA[
-            $(window).on('load', function() { // makes sure the whole site is loaded 
-                $('#status').fadeOut(); // will first fade out the loading animation 
-                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-                $('body').delay(350).css({'overflow':'visible'});
-            })
-        //]]>
-    </script>
   </body>
 </html>

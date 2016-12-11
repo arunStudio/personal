@@ -1,0 +1,78 @@
+body {
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  color: #000; }
+  body ::selection {
+    background: #fcf6c3;
+    color: #ff5c5c; }
+  body h1, body h2, body h3, body h4 {
+    font-family: 'Montserrat', sans-serif; }
+  body a {
+    color: #2e3c40;
+    font-weight: 400; }
+  body .container {
+    width: 1200px; }
+  body.home-page header.header {
+    min-height: 780px;
+    height: 100vh;
+    background-size: contain; }
+    body.home-page header.header nav.main-nav ul.list-inline {
+      display: inline-block;
+      margin: 50px 0 30px; }
+      body.home-page header.header nav.main-nav ul.list-inline li {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+        margin-right: 50px;
+        font-weight: 300;
+        font-family: 'Dosis', sans-serif; }
+        body.home-page header.header nav.main-nav ul.list-inline li a {
+          padding: 0px;
+          border-bottom: 1px solid transparent;
+          transition: all .15s;
+          line-height: 3em;
+          background: none; }
+        body.home-page header.header nav.main-nav ul.list-inline li a:hover, body.home-page header.header nav.main-nav ul.list-inline li a.active {
+          text-decoration: none;
+          border-bottom: 1px solid #2e3c40;
+          padding-bottom: 7px;
+          transition: all .15s; }
+    body.home-page header.header .main-logo {
+      font-size: 1.5em;
+      font-weight: 400;
+      margin-top: 50px;
+      color: #ff5c5c;
+      font-family: 'bebasregular', sans-serif; }
+    body.home-page header.header .about-excerpt {
+      margin-top: 15vh; }
+      body.home-page header.header .about-excerpt .hero-title {
+        height: 120px; }
+        body.home-page header.header .about-excerpt .hero-title h1 {
+          font-size: 46px;
+          font-weight: 700;
+          margin-bottom: 5px;
+          margin-left: -3px;
+          font-family: 'bebasregular', sans-serif;
+          color: #2e3c40; }
+        body.home-page header.header .about-excerpt .hero-title h2 {
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 400;
+          color: #ff5c5c;
+          font-family: 'Dosis', sans-serif;
+          margin-top: 0;
+          letter-spacing: 0.15em; }
+      body.home-page header.header .about-excerpt .excerpt-container p.hero-descr {
+        font-family: 'Martel', serif;
+        font-size: 1.6em;
+        line-height: 1.8em; }
+        body.home-page header.header .about-excerpt .excerpt-container p.hero-descr strong {
+          font-weight: 600; }
+      body.home-page header.header .about-excerpt .excerpt-container a.more-info-link {
+        font-family: 'Dosis', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        color: #1caede;
+        font-weight: 500; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,217 +1,113 @@
+// variables
+$primary-color: #ff5c5c;
+$primary-grey: #2e3c40;
+
 body {
 	font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
 	color: #000;
-	overflow: hidden;
-	/* Preloader */
-	#preloader {
-	    position:fixed;
-	    top:0;
-	    left:0;
-	    right:0;
-	    bottom:0;
-	    background-color:#2b2b2c; /* change if the mask should have another color then white */
-	    z-index:999999; /* makes sure it stays on top */
-	}
-	#status {
-	    width:100px;
-	    height:100px;
-	    position:absolute;
-	    left:50%; /* centers the loading animation horizontally one the screen */
-	    top:50%; /* centers the loading animation vertically one the screen */
-	    background-image:url(../images/status.svg); /* path to your loading animation */
-	    background-repeat:no-repeat;
-	    background-position:center;
-	    margin:-50px 0 0 -50px; /* is width and height divided by two */
-	}
 
-	// Selection text
+	// body selection text
 	::selection {
 	    background: #fcf6c3;
-	    color: #ff5c5c;
+	    color: $primary-color;
 	}
 
 	h1, h2, h3, h4 {
 		font-family: 'Montserrat', sans-serif;
 	}
 	a {
-		color: #2e3c40;
+		color: $primary-grey;
+		font-weight: 400;
 	}
-}
 
-// Font for Project Heading
-@font-face {
-    font-family: 'bebasregular';
-    src: url('fonts/BEBAS___-webfont.eot');
-    src: url('fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/BEBAS___-webfont.woff') format('woff'),
-         url('fonts/BEBAS___-webfont.ttf') format('truetype'),
-         url('fonts/BEBAS___-webfont.svg#bebasregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@media only screen and (min-width: 1300px) {
 	.container {
-		width: 1250px;
+		width: 1200px;
 	}
-}
+	// home page styles
+	&.home-page {
+		header.header {
+			min-height: 780px;
+			height: 100vh;
+			// background: url(../images/arun-final.png) #fff no-repeat bottom left -55px;
+			background-size: contain;
 
-.main-container {
-	padding: 50px 0;
-	min-height: 100vh;
-	position: relative;
-	// &.light-theme{
-	// 	background-color: #fff ;
-	// 	a {
-	// 		color: #000;
-	// 	}
-	// }
-	// &.dark-theme {
-	// 	background-color: #2c2c2d;
-	// 	a {
-	// 		color: #fff;
-	// 	}
-	// }
-	// homepage - styles
-	&.home-page{
-		background: url(../images/hero-img-sml.jpg) #fff no-repeat bottom left;
-		background-size: cover;
-    	height: 100vh;
-    	z-index: 99;
-	}
-	// header styles
-	header {
-		margin-bottom: 50px;
-		.topbar-nav {
-			ul {
-				height: 2em;
-				li {
-					text-transform: uppercase;
-					letter-spacing: 1px;
-					font-size: 12px;
-					margin-right: 50px;
-					font-weight: 300;
-					font-family: 'Dosis', sans-serif;
-					a {
-						padding: 0px;
-						border-bottom: 1px solid transparent;
-						transition: all .15s;
-						color: #2e3c40;
-						line-height: 3em;
-					}
-					a:hover, a.active {
-						text-decoration: none;
-						border-bottom: 1px solid #2e3c40;
-						padding-bottom: 7px;
-						transition: all .15s;
-					}
-				}
-			}
-		}
-		.main-logo h1{
-			font-size: 2.5em;
-			font-weight: 400;
-			margin: 0;
-			color: #ff5c5c;
-			font-family: 'bebasregular', sans-serif;
-		}
-	}
-	// main-content styles
-	.main-content {
-		.hero-title {
-			h1, h2 {
-				display: inline-block;
-			}
-			h1 {
-				font-size: 46px;
-				font-weight: 700;
-				margin-bottom: 5px;
-			}
-			h2 {
-				text-transform: uppercase;
-				font-size: 13px;
-				font-weight: 400;
-				color: #b5b5b5;
-				font-family: 'Open Sans', sans-serif;
-				margin-top: 0;
-			}
-		}
-		// Product page styles
-		.product-container{
-			font-size: 14px;
-			header.product-head {
-				margin: 150px 0 200px;
-				h1.product-name {
-					font-size: 6.5em;
-					color: #2e3c40;
-					text-transform: uppercase;
-					font-family: 'bebasregular', sans-serif;
-				}
-			}
-			.product-article {
-				.product-intro {
-					// font-family: 'Playfair Display', serif;
-					// font-family: 'Old Standard TT', serif;
-					font-family: 'Martel', serif;
-					font-size: 2em;
-					font-weight: 300;
-					margin-bottom: 150px;
-				}
-				.product-role {
-					margin-bottom: 150px;
-					h6{
-						color: #b9b9b9;
-						font-size: 14px;
+			// main navigation styles
+			nav.main-nav {
+				ul.list-inline{
+					display: inline-block;
+					margin: 50px 0 30px;
+					li {
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						font-size: 12px;
+						margin-right: 50px;
+						font-weight: 300;
 						font-family: 'Dosis', sans-serif;
-						text-transform: uppercase;
-					}
-					h5 {
-						font-size: 16px;
-						line-height: 28px;
-					}
-				}
-				.general-content{
-					margin-bottom: 50px;
-					h2,p {
-						margin-top: 0;
-						padding: 30px 0;
-					}
-					h2{
-						font-size: 2.5em;
-						text-transform: uppercase;
-						font-family: 'bebasregular', sans-serif;
-						color: #2e3c40;
-						line-height: 1.25em;
-					}
-					p {
-						line-height: 3.5rem;
-					}
-					ul.service-box {
-						margin-top: 0;
-						padding: 30px;
-						list-style: none;
-						h6 {
-							margin: 0;
-							margin-bottom: 25px;
-							font-size: 14px;
-							text-transform: uppercase;
+						a {
+							padding: 0px;
+							border-bottom: 1px solid transparent;
+							transition: all .15s;
+							line-height: 3em;
+							background: none;
 						}
-						li{
-							font-family: 'Martel', serif;
-							font-size: 1em;
-							font-weight: 300;
-							line-height: 2em;
-							color: #ff5c5c;
+						a:hover, a.active {
+							text-decoration: none;
+							border-bottom: 1px solid $primary-grey;
+							padding-bottom: 7px;
+							transition: all .15s;
 						}
 					}
 				}
 			}
+			// main logo style
+			.main-logo {
+				font-size: 1.5em;
+				font-weight: 400;
+				margin-top: 50px;
+				color: $primary-color;
+				font-family: 'bebasregular', sans-serif;
+			}
+			.about-excerpt {
+				margin-top: 15vh;
+				.hero-title{
+					height: 120px;
+					h1 {
+						font-size: 46px;
+						font-weight: 700;
+						margin-bottom: 5px;
+						margin-left: -3px;
+						font-family: 'bebasregular', sans-serif;
+						color: $primary-grey;
+					}
+					h2 {
+						text-transform: uppercase;
+						font-size: 13px;
+						font-weight: 400;
+						color: $primary-color;
+						font-family: 'Dosis', sans-serif;
+						margin-top: 0;
+						letter-spacing: 0.15em;
+					}
+				}
+				.excerpt-container {
+					p.hero-descr {
+						font-family: 'Martel', serif;
+						font-size: 1.6em;
+						line-height: 1.8em;
+						strong {
+							font-weight: 600;
+						}
+					}
+					a.more-info-link {
+					    font-family: 'Dosis', sans-serif;
+					    text-transform: uppercase;
+					    font-size: 1.1em;
+					    color: #1caede;
+					    font-weight: 500;
+					}
+				}
+			}
 		}
-	}
-	// footer styles
-	footer {
-		position: absolute;
-		bottom: 0;
 	}
 }
