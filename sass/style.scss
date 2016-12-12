@@ -7,6 +7,28 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	color: #000;
 
+	/* Preloader */
+	#preloader {
+	    position:fixed;
+	    top:0;
+	    left:0;
+	    right:0;
+	    bottom:0;
+	    background-color: #fff; //#2b2b2c; /* change if the mask should have another color then white */
+	    z-index:999999; /* makes sure it stays on top */
+	}
+	#status {
+	    width:400px;
+	    height:300px;
+	    position:absolute;
+	    left:50%; /* centers the loading animation horizontally one the screen */
+	    top:50%; /* centers the loading animation vertically one the screen */
+	    background-image:url(../images/preloader/copper-loader.gif); /* path to your loading animation */
+	    background-repeat:no-repeat;
+	    background-position:center;
+	    margin:-150px 0 0 -200px; /* is width and height divided by two */
+	}
+
 	// body selection text
 	::selection {
 	    background: #fcf6c3;

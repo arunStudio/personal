@@ -1,7 +1,31 @@
 body {
   font-size: 13px;
   font-family: 'Open Sans', sans-serif;
-  color: #000; }
+  color: #000;
+  /* Preloader */ }
+  body #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999999;
+    /* makes sure it stays on top */ }
+  body #status {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../images/preloader/copper-loader.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -150px 0 0 -200px;
+    /* is width and height divided by two */ }
   body ::selection {
     background: #fcf6c3;
     color: #ff5c5c; }
@@ -44,7 +68,7 @@ body {
       color: #ff5c5c;
       font-family: 'bebasregular', sans-serif; }
     body.home-page header.header .about-excerpt {
-      margin-top: 15vh; }
+      margin-top: calc(50vh - 245px); }
       body.home-page header.header .about-excerpt .hero-title {
         height: 120px; }
         body.home-page header.header .about-excerpt .hero-title h1 {
