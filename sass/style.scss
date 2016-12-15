@@ -75,11 +75,14 @@ body {
 							line-height: 3em;
 							background: none;
 						}
-						a:hover, a.active {
+						a:hover {
 							text-decoration: none;
 							border-bottom: 1px solid $primary-grey;
 							padding-bottom: 7px;
 							transition: all .15s;
+						}
+						&.active a{
+							border-bottom: 1px solid $primary-grey;
 						}
 					}
 				}
