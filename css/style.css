@@ -68,11 +68,11 @@ body {
       color: #ff5c5c;
       font-family: 'bebasregular', sans-serif; }
     body.home-page header.header .about-excerpt {
-      margin-top: calc(50vh - 245px); }
+      margin-top: calc(50vh - 315px); }
       body.home-page header.header .about-excerpt .hero-title {
         height: 120px; }
         body.home-page header.header .about-excerpt .hero-title h1 {
-          font-size: 46px;
+          font-size: 4.5em;
           font-weight: 700;
           margin-bottom: 5px;
           margin-left: -3px;
@@ -88,15 +88,60 @@ body {
           letter-spacing: 0.15em; }
       body.home-page header.header .about-excerpt .excerpt-container p.hero-descr {
         font-family: 'Martel', serif;
-        font-size: 1.6em;
-        line-height: 1.8em; }
-        body.home-page header.header .about-excerpt .excerpt-container p.hero-descr strong {
-          font-weight: 600; }
-      body.home-page header.header .about-excerpt .excerpt-container a.more-info-link {
+        font-size: 2em;
+        line-height: 1.8em;
+        color: #6b757d;
+        margin: 25px 0 50px 0; }
+        body.home-page header.header .about-excerpt .excerpt-container p.hero-descr .highlighted {
+          font-weight: 600;
+          color: #000; }
+      body.home-page header.header .about-excerpt .excerpt-container .find-me {
         font-family: 'Dosis', sans-serif;
         text-transform: uppercase;
         font-size: 1.1em;
-        color: #1caede;
-        font-weight: 500; }
+        font-weight: 500;
+        letter-spacing: 0.15em; }
+        body.home-page header.header .about-excerpt .excerpt-container .find-me ul {
+          padding: 0; }
+          body.home-page header.header .about-excerpt .excerpt-container .find-me ul li {
+            display: inline;
+            line-height: 3em; }
+            body.home-page header.header .about-excerpt .excerpt-container .find-me ul li span {
+              margin: 0 15px; }
+            body.home-page header.header .about-excerpt .excerpt-container .find-me ul li a {
+              color: #1caede; }
+  body.home-page .case-studies h1 {
+    font-family: 'bebasregular', sans-serif;
+    border-bottom: 2px solid #2e3c40;
+    color: #2e3c40;
+    margin-bottom: 80px; }
+  body.home-page .case-studies ul {
+    padding: 0; }
+    body.home-page .case-studies ul li.project-line {
+      border-bottom: 1px solid #d4d4d4;
+      list-style: none;
+      float: left;
+      width: 100%;
+      background: url(../images/arrow.svg) left center no-repeat;
+      background-size: 100px 50px; }
+      body.home-page .case-studies ul li.project-line:first-child {
+        border-top: 1px solid #d4d4d4; }
+      body.home-page .case-studies ul li.project-line span {
+        line-height: 100px;
+        position: absolute;
+        left: -60px; }
+      body.home-page .case-studies ul li.project-line a {
+        text-decoration: none;
+        cursor: pointer; }
+        body.home-page .case-studies ul li.project-line a h2.project-name {
+          font-size: 1.6em;
+          font-weight: 600;
+          float: left;
+          width: 500px;
+          line-height: 100px;
+          margin: 0; }
+        body.home-page .case-studies ul li.project-line a .work-list {
+          float: left;
+          line-height: 100px; }
 
 /*# sourceMappingURL=style.css.map */
