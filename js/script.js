@@ -5,3 +5,12 @@ $(document).ready(function() {
     transition: 'all 1s ease 1s',
   });
 });
+
+// Casestudies project hover js
+// $(document).ready(function(){
+// 	$('.project-info').hover(function() {
+// 		$(this).siblings('.project-hover').removeClass('hide-opacity');
+// 	}, function() {
+// 		$(this).siblings('.project-hover').addClass('hide-opacity');
+// 	});
+// });

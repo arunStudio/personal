@@ -157,7 +157,7 @@ body {
 			    font-family: 'bebasregular', sans-serif;
 			    border-bottom: 2px solid #2e3c40;
 			    color: #2e3c40;
-			    margin: 80px 0 80px 25%;
+			    margin: 80px 0;
 			}
 			ul{
 				padding:0;
@@ -167,7 +167,9 @@ body {
 				    width: 100%;
 				    background: url(../images/arrow.svg) right center no-repeat;
 				    background-size: 26px;
-				    &:first-child a{
+				    height: 100px;
+				    display: block;
+				    &:first-child a.project-info{
 				    	border-top: 1px solid #d4d4d4;
 				    }
 				    span {
@@ -175,14 +177,14 @@ body {
 				    	position: absolute;
 				    	left: -60px;
 				    }
-				    a{
+				    a.project-info{
 				    	text-decoration: none;
 				    	cursor: pointer;
-				    	margin-left: 25%;
 					    position: relative;
-					    float: left;
+					    z-index: 99;
 					    border-bottom: 1px solid #d4d4d4;
-					    width: 75%;
+					    width: 100%;
+					    display: block;
 				    	h2.project-name{
 				    		font-size: 1.6em;
 				    		font-weight: 600;
@@ -191,9 +193,57 @@ body {
 				    		line-height: 100px;
 				    		margin: 0;
 				    	}
-				    	.work-list{
-				    		float: left;
+				    	.work-list p{
 				    		line-height: 100px;
+				    		margin: 0;
+				    	}
+				    	.project-hover {
+			    		    position: absolute;
+			    		    width: calc(100% + 46%);
+			    		    left: -40%;
+			    		    opacity: 0;
+			    		    top: 0;
+			    		    color: $black;
+			    		    display: block;
+			    		    transition: all .3s;
+			    		    height: 0;
+			    		    padding: 0 25px;
+			    		    visibility: hidden;
+			    		    h2{
+					    		font-family: 'Playfair Display', serif;
+					    		font-weight: 700;
+					    		font-size: 2em;
+					    		width: 40%;
+					    		float: left;
+			    		    }
+			    		    .role-list, .year-section, .view-section {
+			    		    	width: 15%;
+			    		    	float: left;
+			    		    	.label-head {
+			    		    		font-family: 'Dosis', sans-serif;
+								    text-transform: uppercase;
+								    font-size: 1em;
+								    font-weight: 500;
+								    letter-spacing: 0.15em;
+								    margin-top: 25px;
+			    		    	}
+			    		    	.label-note {
+			    		    		font-family: 'Martel', serif;
+								    font-size: 1em;
+								    margin-top: 15px;
+			    		    	}
+			    		    }
+			    		    &.color-yellow {
+			    		    	background: #ffde00;
+			    		    }
+				    	}
+				    	&:hover {
+				    		.project-hover {
+				    			opacity: 1;
+				    			transition: all .3s;
+				    			height: 100px;
+				    			visibility: visible;
+				    		}
 				    	}
 				    }
 				}
