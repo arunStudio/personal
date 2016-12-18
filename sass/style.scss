@@ -1,6 +1,7 @@
 // variables
 $primary-color: #ff5c5c;
 $primary-grey: #2e3c40;
+$light-grey: #afafaf;
 $black: #000;
 $white: #fff;
 
@@ -165,8 +166,6 @@ body {
 				    list-style: none;
 				    float: left;
 				    width: 100%;
-				    background: url(../images/arrow.svg) right center no-repeat;
-				    background-size: 26px;
 				    height: 100px;
 				    display: block;
 				    &:first-child a.project-info{
@@ -183,6 +182,8 @@ body {
 					    position: relative;
 					    z-index: 99;
 					    border-bottom: 1px solid #d4d4d4;
+					    background: url(../images/arrow.svg) right center no-repeat;
+				    	background-size: 26px;
 					    width: 100%;
 					    display: block;
 				    	h2.project-name{
@@ -196,6 +197,11 @@ body {
 				    	.work-list p{
 				    		line-height: 100px;
 				    		margin: 0;
+				    		font-family: 'Dosis', sans-serif;
+				    		font-size: 1.1em;
+						    font-weight: 500;
+						    letter-spacing: 0.10em;
+						    color: $light-grey;
 				    	}
 				    	.project-hover {
 			    		    position: absolute;
@@ -205,19 +211,27 @@ body {
 			    		    top: 0;
 			    		    color: $black;
 			    		    display: block;
-			    		    transition: all .3s;
+			    		    transition: all .1s;
 			    		    height: 0;
 			    		    padding: 0 25px;
 			    		    visibility: hidden;
+			    		    background-position: right 54px top 20px;
 			    		    h2{
 					    		font-family: 'Playfair Display', serif;
 					    		font-weight: 700;
 					    		font-size: 2em;
 					    		width: 40%;
 					    		float: left;
+					    		line-height: 80px;
+					    		transition: all .1s;
+			    		    }
+			    		    .view-section{
+			    		    	text-align: right;
+			    		    	position: relative;
+			    		    	right: 26px;
 			    		    }
 			    		    .role-list, .year-section, .view-section {
-			    		    	width: 15%;
+			    		    	width: 25%;
 			    		    	float: left;
 			    		    	.label-head {
 			    		    		font-family: 'Dosis', sans-serif;
@@ -225,7 +239,8 @@ body {
 								    font-size: 1em;
 								    font-weight: 500;
 								    letter-spacing: 0.15em;
-								    margin-top: 25px;
+								    margin-top: 15px;
+								    transition: all .1s;
 			    		    	}
 			    		    	.label-note {
 			    		    		font-family: 'Martel', serif;
@@ -233,18 +248,45 @@ body {
 								    margin-top: 15px;
 			    		    	}
 			    		    }
+			    		    .year-section {
+			    		    	width: 10%;
+			    		    	text-align: center;
+			    		    }
 			    		    &.color-yellow {
-			    		    	background: #ffde00;
+			    		    	background-color: #F7CA18;
+			    		    }
+			    		    &.color-pink {
+			    		    	background-color: #F62459;
+			    		    }
+			    		    &.color-blue {
+			    		    	background-color: #3498DB;
+			    		    }
+			    		    &.color-orange {
+			    		    	background-color: #F2784B;
 			    		    }
 				    	}
 				    	&:hover {
+				    		border-bottom: 1px solid transparent;
 				    		.project-hover {
+				    			background-image: url(../images/arrow.svg);
+				    			background-position: right 54px top 60px;
+				    			background-repeat: no-repeat;
+				    			background-size: 26px;
 				    			opacity: 1;
-				    			transition: all .3s;
+				    			transition: all .2s;
 				    			height: 100px;
 				    			visibility: visible;
+				    			h2 {
+				    				line-height: 100px;
+				    				transition: all .35s;
+				    			}
+				    			.label-head {
+				    				margin-top: 25px;
+				    				transition: all .35s;
+				    			}
 				    		}
 				    	}
+
 				    }
 				}
 			}
