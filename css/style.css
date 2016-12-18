@@ -127,6 +127,8 @@ body {
       display: block; }
       body.home-page .case-studies ul li.project-line:first-child a.project-info {
         border-top: 1px solid #d4d4d4; }
+      body.home-page .case-studies ul li.project-line:first-child a.project-info:hover {
+        border-top: 1px solid transparent; }
       body.home-page .case-studies ul li.project-line span {
         line-height: 100px;
         position: absolute;
