@@ -49,14 +49,16 @@ body {
 	.container {
 		width: 1200px;
 	}
-	// home page styles
-	&.home-page {
+	// home page and other page styles
+	&.home-page, &.case-study-page {
 		header.header {
 			min-height: 780px;
 			height: 100vh;
-			// background: url(../images/arun-final.png) #fff no-repeat bottom left -55px;
-			background-size: contain;
 
+			&.normal-header {
+				min-height: 80px !important;
+				height: 80px !important;
+			}
 			// main navigation styles
 			nav.main-nav {
 				ul.list-inline{
@@ -69,21 +71,18 @@ body {
 						margin-right: 50px;
 						font-weight: 300;
 						font-family: 'Dosis', sans-serif;
-						a {
+						a, a:focus, a:active, a:active:focus, a:visited {
 							padding: 0px;
-							border-bottom: 1px solid transparent;
+							border-bottom: none !important;
 							transition: all .15s;
 							line-height: 3em;
 							background: none;
 						}
 						a:hover {
 							text-decoration: none;
-							border-bottom: 1px solid $primary-grey;
+							border-bottom: 1px solid $primary-grey !important;
 							padding-bottom: 7px;
 							transition: all .15s;
-						}
-						&.active a{
-							border-bottom: 1px solid $primary-grey;
 						}
 					}
 				}
@@ -153,7 +152,8 @@ body {
 				}
 			}
 		}
-		.case-studies{
+		// featured casestudy list in home page
+		.case-studies-list{
 			h1{
 			    font-family: 'bebasregular', sans-serif;
 			    border-bottom: 2px solid #2e3c40;
@@ -317,5 +317,75 @@ body {
 				}
 			}
 		}
+		// case study page / portfolio page styles
+		.case-study-container{
+			font-size: 14px;
+			h1.case-header{
+				font-size: 6.5em;
+			    color: #2e3c40;
+			    text-transform: uppercase;
+			    font-family: 'bebasregular', sans-serif;
+			    margin: 150px 0 200px 100px;
+			}
+			h2.case-excerpt{
+			    font-family: 'Martel', serif;
+			    font-size: 2em;
+			    line-height: 1.5em;
+			    color: #6b757d;
+			    margin: 25px 0 150px 0;
+			}
+			h3{
+			    font-family: 'bebasregular', sans-serif;
+			    border-bottom: 2px solid #2e3c40;
+			    color: #2e3c40;
+			    margin: 80px 100px 30px;
+			    padding-bottom: 2px;
+			    font-size: 2.2em;
+			}
+			p, ul, blockquote, h4, h5{
+				margin: 0 100px 50px;
+				font-size: 1.3em;
+				line-height: 3.5rem;
+			}
+			ul li{
+				list-style: none;
+			}
+			blockquote {
+				font-style: italic;
+			}
+		}
 	}
+}
+
+// back to top css
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #ececec;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    font-size: 1.25em;
+}
+#back-to-top:hover {
+    background: #ff5c5c;
+    color: white;
+    font-size: 1.5em;
+    transition: font-size 0.2s ease-out;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+#content {
+    height: 2000px;
 }

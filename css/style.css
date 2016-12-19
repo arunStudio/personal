@@ -36,51 +36,51 @@ body {
     font-weight: 400; }
   body .container {
     width: 1200px; }
-  body.home-page header.header {
+  body.home-page header.header, body.case-study-page header.header {
     min-height: 780px;
-    height: 100vh;
-    background-size: contain; }
-    body.home-page header.header nav.main-nav ul.list-inline {
+    height: 100vh; }
+    body.home-page header.header.normal-header, body.case-study-page header.header.normal-header {
+      min-height: 80px !important;
+      height: 80px !important; }
+    body.home-page header.header nav.main-nav ul.list-inline, body.case-study-page header.header nav.main-nav ul.list-inline {
       display: inline-block;
       margin: 50px 0 30px; }
-      body.home-page header.header nav.main-nav ul.list-inline li {
+      body.home-page header.header nav.main-nav ul.list-inline li, body.case-study-page header.header nav.main-nav ul.list-inline li {
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 12px;
         margin-right: 50px;
         font-weight: 300;
         font-family: 'Dosis', sans-serif; }
-        body.home-page header.header nav.main-nav ul.list-inline li a {
+        body.home-page header.header nav.main-nav ul.list-inline li a, body.home-page header.header nav.main-nav ul.list-inline li a:focus, body.home-page header.header nav.main-nav ul.list-inline li a:active, body.home-page header.header nav.main-nav ul.list-inline li a:active:focus, body.home-page header.header nav.main-nav ul.list-inline li a:visited, body.case-study-page header.header nav.main-nav ul.list-inline li a, body.case-study-page header.header nav.main-nav ul.list-inline li a:focus, body.case-study-page header.header nav.main-nav ul.list-inline li a:active, body.case-study-page header.header nav.main-nav ul.list-inline li a:active:focus, body.case-study-page header.header nav.main-nav ul.list-inline li a:visited {
           padding: 0px;
-          border-bottom: 1px solid transparent;
+          border-bottom: none !important;
           transition: all .15s;
           line-height: 3em;
           background: none; }
-        body.home-page header.header nav.main-nav ul.list-inline li a:hover {
+        body.home-page header.header nav.main-nav ul.list-inline li a:hover, body.case-study-page header.header nav.main-nav ul.list-inline li a:hover {
           text-decoration: none;
-          border-bottom: 1px solid #2e3c40;
+          border-bottom: 1px solid #2e3c40 !important;
           padding-bottom: 7px;
           transition: all .15s; }
-        body.home-page header.header nav.main-nav ul.list-inline li.active a {
-          border-bottom: 1px solid #2e3c40; }
-    body.home-page header.header .main-logo {
+    body.home-page header.header .main-logo, body.case-study-page header.header .main-logo {
       font-size: 1.5em;
       font-weight: 400;
       margin-top: 50px;
       color: #ff5c5c;
       font-family: 'bebasregular', sans-serif; }
-    body.home-page header.header .about-excerpt {
+    body.home-page header.header .about-excerpt, body.case-study-page header.header .about-excerpt {
       margin-top: calc(50vh - 315px); }
-      body.home-page header.header .about-excerpt .hero-title {
+      body.home-page header.header .about-excerpt .hero-title, body.case-study-page header.header .about-excerpt .hero-title {
         height: 120px; }
-        body.home-page header.header .about-excerpt .hero-title h1 {
+        body.home-page header.header .about-excerpt .hero-title h1, body.case-study-page header.header .about-excerpt .hero-title h1 {
           font-size: 4.5em;
           font-weight: 700;
           margin-bottom: 5px;
           margin-left: -3px;
           font-family: 'bebasregular', sans-serif;
           color: #2e3c40; }
-        body.home-page header.header .about-excerpt .hero-title h2 {
+        body.home-page header.header .about-excerpt .hero-title h2, body.case-study-page header.header .about-excerpt .hero-title h2 {
           text-transform: uppercase;
           font-size: 13px;
           font-weight: 400;
@@ -88,53 +88,53 @@ body {
           font-family: 'Dosis', sans-serif;
           margin-top: 0;
           letter-spacing: 0.15em; }
-      body.home-page header.header .about-excerpt .excerpt-container p.hero-descr {
+      body.home-page header.header .about-excerpt .excerpt-container p.hero-descr, body.case-study-page header.header .about-excerpt .excerpt-container p.hero-descr {
         font-family: 'Martel', serif;
         font-size: 2em;
         line-height: 1.8em;
         color: #6b757d;
         margin: 25px 0 50px 0; }
-        body.home-page header.header .about-excerpt .excerpt-container p.hero-descr .highlighted {
+        body.home-page header.header .about-excerpt .excerpt-container p.hero-descr .highlighted, body.case-study-page header.header .about-excerpt .excerpt-container p.hero-descr .highlighted {
           font-weight: 600;
           color: #000; }
-      body.home-page header.header .about-excerpt .excerpt-container .find-me {
+      body.home-page header.header .about-excerpt .excerpt-container .find-me, body.case-study-page header.header .about-excerpt .excerpt-container .find-me {
         font-family: 'Dosis', sans-serif;
         text-transform: uppercase;
         font-size: 1.1em;
         font-weight: 500;
         letter-spacing: 0.15em; }
-        body.home-page header.header .about-excerpt .excerpt-container .find-me ul {
+        body.home-page header.header .about-excerpt .excerpt-container .find-me ul, body.case-study-page header.header .about-excerpt .excerpt-container .find-me ul {
           padding: 0; }
-          body.home-page header.header .about-excerpt .excerpt-container .find-me ul li {
+          body.home-page header.header .about-excerpt .excerpt-container .find-me ul li, body.case-study-page header.header .about-excerpt .excerpt-container .find-me ul li {
             display: inline;
             line-height: 3em; }
-            body.home-page header.header .about-excerpt .excerpt-container .find-me ul li span {
+            body.home-page header.header .about-excerpt .excerpt-container .find-me ul li span, body.case-study-page header.header .about-excerpt .excerpt-container .find-me ul li span {
               margin: 0 15px; }
-            body.home-page header.header .about-excerpt .excerpt-container .find-me ul li a {
+            body.home-page header.header .about-excerpt .excerpt-container .find-me ul li a, body.case-study-page header.header .about-excerpt .excerpt-container .find-me ul li a {
               color: #1caede; }
-  body.home-page .case-studies h1 {
+  body.home-page .case-studies-list h1, body.case-study-page .case-studies-list h1 {
     font-family: 'bebasregular', sans-serif;
     border-bottom: 2px solid #2e3c40;
     color: #2e3c40;
     margin: 80px 0 0;
     padding-bottom: 10px; }
-  body.home-page .case-studies ul {
+  body.home-page .case-studies-list ul, body.case-study-page .case-studies-list ul {
     padding: 0; }
-    body.home-page .case-studies ul li.project-line {
+    body.home-page .case-studies-list ul li.project-line, body.case-study-page .case-studies-list ul li.project-line {
       list-style: none;
       float: left;
       width: 100%;
       height: 100px;
       display: block; }
-      body.home-page .case-studies ul li.project-line:first-child a.project-info {
+      body.home-page .case-studies-list ul li.project-line:first-child a.project-info, body.case-study-page .case-studies-list ul li.project-line:first-child a.project-info {
         border-top: 1px solid #d4d4d4; }
-      body.home-page .case-studies ul li.project-line:first-child a.project-info:hover {
+      body.home-page .case-studies-list ul li.project-line:first-child a.project-info:hover, body.case-study-page .case-studies-list ul li.project-line:first-child a.project-info:hover {
         border-top: 1px solid transparent; }
-      body.home-page .case-studies ul li.project-line span {
+      body.home-page .case-studies-list ul li.project-line span, body.case-study-page .case-studies-list ul li.project-line span {
         line-height: 100px;
         position: absolute;
         left: -60px; }
-      body.home-page .case-studies ul li.project-line a.project-info {
+      body.home-page .case-studies-list ul li.project-line a.project-info, body.case-study-page .case-studies-list ul li.project-line a.project-info {
         text-decoration: none;
         cursor: pointer;
         position: relative;
@@ -144,14 +144,14 @@ body {
         background-size: 26px;
         width: 100%;
         display: block; }
-        body.home-page .case-studies ul li.project-line a.project-info h2.project-name {
+        body.home-page .case-studies-list ul li.project-line a.project-info h2.project-name, body.case-study-page .case-studies-list ul li.project-line a.project-info h2.project-name {
           font-size: 1.6em;
           font-weight: 600;
           float: left;
           width: 500px;
           line-height: 100px;
           margin: 0; }
-        body.home-page .case-studies ul li.project-line a.project-info .work-list p {
+        body.home-page .case-studies-list ul li.project-line a.project-info .work-list p, body.case-study-page .case-studies-list ul li.project-line a.project-info .work-list p {
           line-height: 100px;
           margin: 0;
           font-family: 'Dosis', sans-serif;
@@ -159,7 +159,7 @@ body {
           font-weight: 500;
           letter-spacing: 0.10em;
           color: #afafaf; }
-        body.home-page .case-studies ul li.project-line a.project-info .project-hover {
+        body.home-page .case-studies-list ul li.project-line a.project-info .project-hover, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover {
           position: absolute;
           width: calc(100% + 46%);
           left: -40%;
@@ -172,7 +172,7 @@ body {
           padding: 0 25px;
           visibility: hidden;
           background-position: right 54px top 20px; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover h2 {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover h2, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover h2 {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
             font-size: 2em;
@@ -180,14 +180,14 @@ body {
             float: left;
             line-height: 80px;
             transition: all .1s; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover .view-section {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section {
             text-align: right;
             position: relative;
             right: 26px; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover .role-list, body.home-page .case-studies ul li.project-line a.project-info .project-hover .year-section, body.home-page .case-studies ul li.project-line a.project-info .project-hover .view-section {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section {
             width: 25%;
             float: left; }
-            body.home-page .case-studies ul li.project-line a.project-info .project-hover .role-list .label-head, body.home-page .case-studies ul li.project-line a.project-info .project-hover .year-section .label-head, body.home-page .case-studies ul li.project-line a.project-info .project-hover .view-section .label-head {
+            body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-head, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-head, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-head {
               font-family: 'Dosis', sans-serif;
               text-transform: uppercase;
               font-size: 1em;
@@ -195,38 +195,38 @@ body {
               letter-spacing: 0.15em;
               margin-top: 15px;
               transition: all .1s; }
-            body.home-page .case-studies ul li.project-line a.project-info .project-hover .role-list .label-note, body.home-page .case-studies ul li.project-line a.project-info .project-hover .year-section .label-note, body.home-page .case-studies ul li.project-line a.project-info .project-hover .view-section .label-note {
+            body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-note, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-note, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-note, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-note, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-note, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-note {
               font-family: 'Martel', serif;
               font-size: 1em;
               margin-top: 15px; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover .year-section {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section {
             width: 10%;
             text-align: center; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-yellow {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-yellow, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-yellow {
             background-color: #F7CA18; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-pink {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-pink, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-pink {
             background-color: #F62459; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-blue {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-blue, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-blue {
             background-color: #3498DB; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-orange {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-orange, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-orange {
             background-color: #F2784B; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-green {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-green, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-green {
             background-color: #87D37C; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-red {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-red, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-red {
             background-color: #D2527F; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-plum {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-plum, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-plum {
             background-color: #d679cc; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-turquoise {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-turquoise, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-turquoise {
             background-color: #36D7B7; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-orange-light {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-orange-light, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-orange-light {
             background-color: #F4B350; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-lime {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-lime, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-lime {
             background-color: #C8F7C5; }
-          body.home-page .case-studies ul li.project-line a.project-info .project-hover.color-grey {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover.color-grey, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover.color-grey {
             background-color: #DADFE1; }
-        body.home-page .case-studies ul li.project-line a.project-info:hover {
+        body.home-page .case-studies-list ul li.project-line a.project-info:hover, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover {
           border-bottom: 1px solid transparent; }
-          body.home-page .case-studies ul li.project-line a.project-info:hover .project-hover {
+          body.home-page .case-studies-list ul li.project-line a.project-info:hover .project-hover, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover .project-hover {
             background-image: url(../images/arrow.svg);
             background-position: right 54px top 60px;
             background-repeat: no-repeat;
@@ -235,11 +235,71 @@ body {
             transition: all .15s, background-position .4s;
             height: 100px;
             visibility: visible; }
-            body.home-page .case-studies ul li.project-line a.project-info:hover .project-hover h2 {
+            body.home-page .case-studies-list ul li.project-line a.project-info:hover .project-hover h2, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover .project-hover h2 {
               line-height: 100px;
               transition: all .35s; }
-            body.home-page .case-studies ul li.project-line a.project-info:hover .project-hover .label-head {
+            body.home-page .case-studies-list ul li.project-line a.project-info:hover .project-hover .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover .project-hover .label-head {
               margin-top: 25px;
               transition: all .35s; }
+  body.home-page .case-study-container, body.case-study-page .case-study-container {
+    font-size: 14px; }
+    body.home-page .case-study-container h1.case-header, body.case-study-page .case-study-container h1.case-header {
+      font-size: 6.5em;
+      color: #2e3c40;
+      text-transform: uppercase;
+      font-family: 'bebasregular', sans-serif;
+      margin: 150px 0 200px 100px; }
+    body.home-page .case-study-container h2.case-excerpt, body.case-study-page .case-study-container h2.case-excerpt {
+      font-family: 'Martel', serif;
+      font-size: 2em;
+      line-height: 1.5em;
+      color: #6b757d;
+      margin: 25px 0 150px 0; }
+    body.home-page .case-study-container h3, body.case-study-page .case-study-container h3 {
+      font-family: 'bebasregular', sans-serif;
+      border-bottom: 2px solid #2e3c40;
+      color: #2e3c40;
+      margin: 80px 100px 30px;
+      padding-bottom: 2px;
+      font-size: 2.2em; }
+    body.home-page .case-study-container p, body.home-page .case-study-container ul, body.home-page .case-study-container blockquote, body.home-page .case-study-container h4, body.home-page .case-study-container h5, body.case-study-page .case-study-container p, body.case-study-page .case-study-container ul, body.case-study-page .case-study-container blockquote, body.case-study-page .case-study-container h4, body.case-study-page .case-study-container h5 {
+      margin: 0 100px 50px;
+      font-size: 1.3em;
+      line-height: 3.5rem; }
+    body.home-page .case-study-container ul li, body.case-study-page .case-study-container ul li {
+      list-style: none; }
+    body.home-page .case-study-container blockquote, body.case-study-page .case-study-container blockquote {
+      font-style: italic; }
+
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #ececec;
+  color: #444;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  font-size: 1.25em; }
+
+#back-to-top:hover {
+  background: #ff5c5c;
+  color: white;
+  font-size: 1.5em;
+  transition: font-size 0.2s ease-out; }
+
+#back-to-top.show {
+  opacity: 1; }
+
+#content {
+  height: 2000px; }
 
 /*# sourceMappingURL=style.css.map */

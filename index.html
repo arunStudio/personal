@@ -22,7 +22,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="home-page">
+  <body class="home-page" id="top">
 
     <!-- Preloader content -->
     <div id="preloader">
@@ -40,7 +40,7 @@
           <!-- main menu -->
           <nav class="col-md-9 main-nav text-right">
             <ul class="list-inline">
-              <li role="presentation" class="active"><a href="#">About</a></li>
+              <li role="presentation"><a href="#">About</a></li>
               <li role="presentation"><a href="#cases">Case Studies</a></li>
               <li role="presentation"><a href="#">Lab</a></li>
               <li role="presentation"><a href="#">Art</a></li>
@@ -77,22 +77,22 @@
       <!-- header - ends -->
 
       <!-- case studies row/section -->
-      <div class="row case-studies" id="cases">
+      <div class="row case-studies-list" id="cases">
         <div class="col-md-9 col-md-offset-3">
           <h1>Featured Case Studies</h1>
           <ul class="case-studies">
             <!-- individual project li box -->
             <li class="project-line">
               <!-- visible section -->
-              <a href="#" class="project-info">
+              <a href="cases/schneider-wiser-air.html" class="project-info">
                 <span>.01</span>
-                <h2 class="project-name">Schnider WiserAir</h2>
+                <h2 class="project-name">Schneider WiserAir</h2>
                 <div class="work-list">
                   <p>IA, IxD, UX, UI</p>
                 </div>
                 <!-- project view on hover -->
                 <div class="project-hover color-yellow">
-                    <h2 class="project-name">Schnider WiserAir</h2>
+                    <h2 class="project-name">Schneider WiserAir</h2>
                     <div class="role-list">
                       <p class="label-head">Role</p>
                       <p class="label-note">IA, IxD, UX, UI</p>
@@ -503,6 +503,9 @@
     </div>
     <!-- main container - ends -->
 
+    <!-- Back to top arrow -->
+    <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -514,12 +517,36 @@
     <!-- preloader jqery code -->
     <script type="text/javascript">
         //<![CDATA[
-            $(window).on('load', function() { // makes sure the whole site is loaded 
-                $('#status').fadeOut(); // will first fade out the loading animation 
-                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-                $('body').delay(350).css({'overflow':'visible'});
-            })
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+        })
         //]]>
+
+        // Back to top
+        if ($('#back-to-top').length) {
+          var scrollTrigger = 100, // px
+              backToTop = function () {
+                  var scrollTop = $(window).scrollTop();
+                  if (scrollTop > scrollTrigger) {
+                      $('#back-to-top').addClass('show');
+                  } else {
+                      $('#back-to-top').removeClass('show');
+                  }
+              };
+          backToTop();
+          $(window).on('scroll', function () {
+              backToTop();
+          });
+          $('#back-to-top').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({
+                  scrollTop: 0
+              }, 700);
+          });
+      }
+        // Back to top ends
     </script>
   </body>
 </html>
