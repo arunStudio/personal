@@ -6,11 +6,8 @@ $(document).ready(function() {
   });
 });
 
-// Casestudies project hover js
-// $(document).ready(function(){
-// 	$('.project-info').hover(function() {
-// 		$(this).siblings('.project-hover').removeClass('hide-opacity');
-// 	}, function() {
-// 		$(this).siblings('.project-hover').addClass('hide-opacity');
-// 	});
-// });
+
+// include header
+$(document).ready(function(){
+    $(".header").load("top-header.html");
+});

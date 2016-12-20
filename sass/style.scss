@@ -5,10 +5,16 @@ $light-grey: #afafaf;
 $black: #000;
 $white: #fff;
 
+.container {
+	width: 1100px;
+}
+
 body {
 	font-size: 13px;
-	font-family: 'Open Sans', sans-serif;
+	// font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #000;
+	font-weight: 400;
 
 	/* Preloader */
 	#preloader {
@@ -46,9 +52,6 @@ body {
 		font-weight: 400;
 	}
 
-	.container {
-		width: 1200px;
-	}
 	// home page and other page styles
 	&.home-page, &.case-study-page {
 		header.header {
@@ -61,6 +64,7 @@ body {
 			}
 			// main navigation styles
 			nav.main-nav {
+				text-align: right;
 				ul.list-inline{
 					display: inline-block;
 					margin: 50px 0 30px;
@@ -94,15 +98,16 @@ body {
 				margin-top: 50px;
 				color: $primary-color;
 				font-family: 'bebasregular', sans-serif;
+				text-align: left;
 			}
 			.about-excerpt {
-				margin-top: calc(50vh - 315px);
+				margin-top: calc(50vh - 365px);
 				.hero-title{
 					height: 120px;
 					h1 {
 						font-size: 4.5em;
 						font-weight: 700;
-						margin-bottom: 5px;
+						margin-bottom: 15px;
 						margin-left: -3px;
 						font-family: 'bebasregular', sans-serif;
 						color: $primary-grey;
@@ -123,7 +128,7 @@ body {
 						font-size: 2em;
 						line-height: 1.8em;
 						color: #6b757d;
-						margin: 25px 0 50px 0;
+						margin: 35px 0 50px 0;
 						.highlighted {
 							font-weight: 600;
 							color: $black;
@@ -256,40 +261,6 @@ body {
 			    		    	width: 10%;
 			    		    	text-align: center;
 			    		    }
-			    		    &.color-yellow {
-			    		    	background-color: #F7CA18;
-			    		    }
-			    		    &.color-pink {
-			    		    	background-color: #F62459;
-			    		    }
-			    		    &.color-blue {
-			    		    	background-color: #3498DB;
-			    		    }
-			    		    &.color-orange {
-			    		    	background-color: #F2784B;
-			    		    }
-			    		    &.color-green{
-			    		    	background-color: #87D37C;
-			    		    }
-			    		    &.color-red{
-			    		    	background-color: #D2527F;
-			    		    	// EC644B
-			    		    }
-			    		    &.color-plum{
-			    		    	background-color: #d679cc;
-			    		    }
-			    		    &.color-turquoise{
-			    		    	background-color: #36D7B7;
-			    		    }
-			    		    &.color-orange-light{
-			    		    	background-color: #F4B350;
-			    		    }
-			    		    &.color-lime{
-			    		    	background-color: #C8F7C5;
-			    		    }
-			    		    &.color-grey{
-			    		    	background-color: #DADFE1;
-			    		    }
 				    	}
 				    	&:hover {
 				    		border-bottom: 1px solid transparent;
@@ -320,41 +291,141 @@ body {
 		// case study page / portfolio page styles
 		.case-study-container{
 			font-size: 14px;
+			text-align: center;
 			h1.case-header{
 				font-size: 6.5em;
 			    color: #2e3c40;
 			    text-transform: uppercase;
 			    font-family: 'bebasregular', sans-serif;
-			    margin: 150px 0 200px 100px;
+			    margin: 150px 0 200px;
 			}
 			h2.case-excerpt{
 			    font-family: 'Martel', serif;
 			    font-size: 2em;
 			    line-height: 1.5em;
-			    color: #6b757d;
-			    margin: 25px 0 150px 0;
+			    color: #383838;
+			    margin: 25px auto 180px;
+			    font-weight: lighter;
+			    max-width: 1100px;
+			    width: 100%;
 			}
 			h3{
 			    font-family: 'bebasregular', sans-serif;
-			    border-bottom: 2px solid #2e3c40;
-			    color: #2e3c40;
-			    margin: 80px 100px 30px;
+			    color: #111517;
+			    margin: 100px 0 30px;
 			    padding-bottom: 2px;
 			    font-size: 2.2em;
+			    &:after {
+		    	    width: 50px;
+				    display: block;
+				    height: 2px;
+				    background: #111517;
+				    margin: 30px auto;
+				    content: "";
+			    }
 			}
 			p, ul, blockquote, h4, h5{
-				margin: 0 100px 50px;
-				font-size: 1.3em;
+				font-size: 1.2em;
 				line-height: 3.5rem;
+				max-width: 650px;
+				width: 100%;
+				margin: 0 auto 50px;
 			}
-			ul li{
-				list-style: none;
+			p, ul, blockquote{
+				color: #6d6d6d;
+				font-weight: 300;
+			}
+			ul {
+				padding-left: 0;
+				li{
+					list-style: none;
+				}
 			}
 			blockquote {
-				font-style: italic;
+				border: 0;
+			    font-family: 'Martel', serif;
+			    line-height: 1.5em;
+			    color: #383838;
+			}
+			.grey-area {
+				background: #f5f5f5;
+				padding: 1px 0 40px;
 			}
 		}
 	}
+}
+
+// media query for width less than 1100 px
+@media only screen and (max-width: 1100px) {
+	.container {
+	    width: 90vw;
+	}
+	body{
+		font-size: 10px;
+		// home page and other page styles
+		&.home-page, &.case-study-page {
+			header.header {
+				nav.main-nav {
+					text-align: left;
+				}
+				.about-excerpt {
+					margin-top: 100px;
+				}
+			}
+			.case-study-container{
+				font-size: 10px;
+			}
+		}
+	}
+}
+
+.color-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 10px;
+	animation: colorgrow 2s 1;
+}
+
+@keyframes colorgrow {
+    from {width: 0px;}
+    to {width: 100vw;}
+}
+
+.color-yellow {
+	background-color: #F7CA18;
+}
+.color-pink {
+	background-color: #F62459;
+}
+.color-blue {
+	background-color: #3498DB;
+}
+.color-orange {
+	background-color: #F2784B;
+}
+.color-green{
+	background-color: #87D37C;
+}
+.color-red{
+	background-color: #D2527F;
+	// EC644B
+}
+.color-plum{
+	background-color: #d679cc;
+}
+.color-turquoise{
+	background-color: #36D7B7;
+}
+.color-orange-light{
+	background-color: #F4B350;
+}
+.color-lime{
+	background-color: #C8F7C5;
+}
+.color-grey{
+	background-color: #DADFE1;
 }
 
 // back to top css
@@ -375,7 +446,7 @@ body {
     text-decoration: none;
     transition: opacity 0.2s ease-out;
     opacity: 0;
-    font-size: 1.25em;
+    font-size: .9em;
 }
 #back-to-top:hover {
     background: #ff5c5c;

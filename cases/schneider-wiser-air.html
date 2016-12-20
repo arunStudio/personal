@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Arun Jacob - Product Designer</title>
+    <title>Schneider WiserAir-Arun Jacob - Product Designer</title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/fonts-face.css">
 
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Martel:300,400,600|Playfair+Display:400,700,900|Dosis:300,400,500|Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Martel:300,400,600|Playfair+Display:400,700,900|Dosis:300,400,500|Roboto:100,100i,300,300i,400,400i" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,28 +30,18 @@
     </div>
     <!-- preloader -END -->
 
+    <!-- Color-representation -->
+    <div class="color-bg color-yellow"></div>
+
     <!-- main container - starts -->
     <div class="container">
       <header class="header normal-header">
-        <!-- main navigation row -->
-        <div class="row">
-          <!-- main logo -->
-          <div class="col-md-3 main-logo text-left">Arun Jacob</div>
-          <!-- main menu -->
-          <nav class="col-md-9 main-nav text-right">
-            <ul class="list-inline">
-              <li role="presentation"><a href="../index.html">About</a></li>
-              <li role="presentation"><a href="../index.html#cases">Case Studies</a></li>
-              <li role="presentation"><a href="#">Lab</a></li>
-              <li role="presentation"><a href="#">Art</a></li>
-              <li role="presentation"><a href="#">Journal</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!-- main navigation row - end -->
+        <!-- the nav items will come here from jqueru .load -->
       </header>
       <!-- header - ends -->
+    </div>
 
+    <div class="container-fluid">
       <!-- case-study details - Schneider WiserAir-->
       <div class="row case-study-container">
         <div class="col-md-12">
@@ -70,12 +60,14 @@
           <h3>User Research Session</h3>
           <p>We held two user research sessions where we met with 11 people who are current users of different thermostats. We conducted various exercises to understand their underlying needs, desires, and expectations around their thermostat and energy use. They used mobile and device prototypes while we observed and received feedback on the interactions, flows and visual design. We synthesized our learnings as we developed our ideas.</p>
           
-          <h3>User Interview Session</h3>
-          <blockquote>"I’d love to see what the weather is like as I’m walking out the door. If my thermostat can warn me that I need an umbrella that would be great."</blockquote>
-          <blockquote>"Most companies make the mistake of giving too much information to the user. Providing the right information is what creates a desirable experience."</blockquote>
-          <blockquote>"There’s something really nice about my thermostat knowing my name and starting the day with a personalized message."</blockquote>
-          <blockquote>"Users don’t want to constantly tweak and monitor their thermostats. They want to set it and forget it. Things need to happen in the background."</blockquote>
-          <blockquote>"Instantaneous feedback on how much energy my AC was using could have saved me hundreds of dollars on my monthly bill."</blockquote>
+          <div class="grey-area">
+            <h3>User Interview Session</h3>
+            <blockquote>"I’d love to see what the weather is like as I’m walking out the door. If my thermostat can warn me that I need an umbrella that would be great."</blockquote>
+            <blockquote>"Most companies make the mistake of giving too much information to the user. Providing the right information is what creates a desirable experience."</blockquote>
+            <blockquote>"There’s something really nice about my thermostat knowing my name and starting the day with a personalized message."</blockquote>
+            <blockquote>"Users don’t want to constantly tweak and monitor their thermostats. They want to set it and forget it. Things need to happen in the background."</blockquote>
+            <blockquote>"Instantaneous feedback on how much energy my AC was using could have saved me hundreds of dollars on my monthly bill."</blockquote>
+          </div>
 
           <h3>Application Design</h3>
           <p>We try to capture key elements of the visual and interaction design for the application and the thermostat design.</p>
@@ -142,7 +134,7 @@
     <!-- main container - ends -->
 
     <!-- Back to top arrow -->
-    <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+    <a href="#" id="back-to-top" title="Back to top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
