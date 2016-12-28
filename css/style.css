@@ -84,7 +84,8 @@ body {
           margin-bottom: 15px;
           margin-left: -3px;
           font-family: 'bebasregular', sans-serif;
-          color: #2e3c40; }
+          color: #2e3c40;
+          word-spacing: .15em; }
         body.home-page header.header .about-excerpt .hero-title h2, body.case-study-page header.header .about-excerpt .hero-title h2 {
           text-transform: uppercase;
           font-size: 13px;
@@ -148,12 +149,13 @@ body {
         background: url(../images/arrow.svg) right center no-repeat;
         background-size: 26px;
         width: 100%;
-        display: block; }
+        display: block;
+        padding-right: 36px; }
         body.home-page .case-studies-list ul li.project-line a.project-info h2.project-name, body.case-study-page .case-studies-list ul li.project-line a.project-info h2.project-name {
           font-size: 1.6em;
           font-weight: 600;
           float: left;
-          width: 500px;
+          width: 75%;
           line-height: 100px;
           margin: 0; }
         body.home-page .case-studies-list ul li.project-line a.project-info .work-list p, body.case-study-page .case-studies-list ul li.project-line a.project-info .work-list p {
@@ -163,7 +165,10 @@ body {
           font-size: 1.1em;
           font-weight: 500;
           letter-spacing: 0.10em;
-          color: #afafaf; }
+          color: #afafaf;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden; }
         body.home-page .case-studies-list ul li.project-line a.project-info .project-hover, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover {
           position: absolute;
           width: calc(100% + 46%);
@@ -184,7 +189,10 @@ body {
             width: 40%;
             float: left;
             line-height: 80px;
-            transition: all .1s; }
+            transition: all .1s;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden; }
           body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section {
             text-align: right;
             position: relative;
@@ -232,7 +240,13 @@ body {
       color: #2e3c40;
       text-transform: uppercase;
       font-family: 'bebasregular', sans-serif;
-      margin: 150px 0 200px; }
+      margin: 150px 0 200px;
+      word-spacing: .15em; }
+      body.home-page .case-study-container h1.case-header .small-caps, body.case-study-page .case-study-container h1.case-header .small-caps {
+        font-family: 'Roboto', sans-serif;
+        text-transform: lowercase;
+        font-weight: 600;
+        font-size: 1.2em; }
     body.home-page .case-study-container h2.case-excerpt, body.case-study-page .case-study-container h2.case-excerpt {
       font-family: 'Martel', serif;
       font-size: 2em;
@@ -247,7 +261,8 @@ body {
       color: #111517;
       margin: 100px 0 30px;
       padding-bottom: 2px;
-      font-size: 2.2em; }
+      font-size: 2.2em;
+      word-spacing: .25em; }
       body.home-page .case-study-container h3:after, body.case-study-page .case-study-container h3:after {
         width: 50px;
         display: block;
@@ -283,10 +298,20 @@ body {
 
   body {
     font-size: 10px; }
-    body.home-page header.header nav.main-nav, body.case-study-page header.header nav.main-nav {
-      text-align: left; }
-    body.home-page header.header .about-excerpt, body.case-study-page header.header .about-excerpt {
-      margin-top: 100px; }
+    body.home-page header.header, body.case-study-page header.header {
+      height: auto;
+      max-height: auto; }
+      body.home-page header.header nav.main-nav, body.case-study-page header.header nav.main-nav {
+        text-align: left; }
+      body.home-page header.header .about-excerpt, body.case-study-page header.header .about-excerpt {
+        margin-top: 100px; }
+    body.home-page .case-studies-list ul li.project-line span, body.case-study-page .case-studies-list ul li.project-line span {
+      visibility: hidden; }
+    body.home-page .case-studies-list ul li.project-line a.project-info .project-hover, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover {
+      width: calc(100% + 30px);
+      left: -15px;
+      padding: 0 15px;
+      background-position: right 15px top 55px !important; }
     body.home-page .case-study-container, body.case-study-page .case-study-container {
       font-size: 10px; } }
 .color-bg {
@@ -357,7 +382,7 @@ body {
 #back-to-top:hover {
   background: #ff5c5c;
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   transition: font-size 0.2s ease-out; }
 
 #back-to-top.show {

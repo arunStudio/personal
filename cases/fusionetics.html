@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Fusionetics - Arun Jacob - Product Designer</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet"><!-- User Defined stylesheets -->    
+    <link rel="stylesheet" href="../css/fonts-face.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Martel:300,400,600|Playfair+Display:400,700,900|Dosis:300,400,500|Roboto:100,100i,300,300i,400,400i" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="case-study-page" id="top">
+
+    <!-- Preloader content -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- preloader -END -->
+
+    <!-- Color-representation -->
+    <div class="color-bg color-red"></div>
+
+    <!-- main container - starts -->
+    <div class="container">
+      <header class="header normal-header">
+        <!-- the nav items will come here from jqueru .load -->
+      </header>
+      <!-- header - ends -->
+    </div>
+
+    <div class="container-fluid">
+      <!-- case-study details - Schneider WiserAir-->
+      <div class="row case-study-container">
+        <div class="col-md-12">
+          <h1 class="case-header">Fusionetics</h1>
+          
+          <h2 class="case-excerpt">Fusionetics is a Performance Health System designed to reduce injuries, decrease pain, optimize performance, and speed recovery.</h2>
+          
+          <h3>Overview</h3>
+          <p>The Fusionetics Performance Healthcare System revolutionizes the way technology is used to turn complex science into simple, efficient and results-oriented applications.  The Fusionetics Performance Healthcare System provides integrated training programs designed to address movement efficiency and improve performance capacity.</p>
+
+          <h3>The Approach</h3>
+          <p>We critiqued the initial concept, analysing good and bad points. We also gathered external opinions. We explored the current market and created a few initial concepts. We validated our initial ideas. We did this by speaking to potential users gathering their thoughts on this genre of website.</p>
+
+          <h3>Problems and Solutions</h3>
+          <p>What product or service are we building? What is the problem we want to solve? Who are the customers? What is the target market? We came up with a few ideas which we decided to validate. We created a few problems and gains which we rated based on intensity, field knowledge, interest and time.</p>
+
+          <h3>Userflow</h3>
+
+          <h3>Visual Designs</h3>
+          
+
+        </div>
+      </div>
+      <!-- case study ends -->
+
+    </div>
+    <!-- main container - ends -->
+
+    <!-- Back to top arrow -->
+    <a href="#" id="back-to-top" title="Back to top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- User defined javascript -->
+    <script src="../js/script.js"></script>
+    <!-- User defined javascript -->
+    <script src="../js/back-top.js"></script>
+    <!-- preloader jqery code -->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+        //]]>
+
+        // Back to top
+        if ($('#back-to-top').length) {
+          var scrollTrigger = 100, // px
+              backToTop = function () {
+                  var scrollTop = $(window).scrollTop();
+                  if (scrollTop > scrollTrigger) {
+                      $('#back-to-top').addClass('show');
+                  } else {
+                      $('#back-to-top').removeClass('show');
+                  }
+              };
+          backToTop();
+          $(window).on('scroll', function () {
+              backToTop();
+          });
+          $('#back-to-top').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({
+                  scrollTop: 0
+              }, 700);
+          });
+      }
+        // Back to top ends
+    </script>
+  </body>
+</html>

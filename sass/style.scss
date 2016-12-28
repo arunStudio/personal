@@ -111,6 +111,7 @@ body {
 						margin-left: -3px;
 						font-family: 'bebasregular', sans-serif;
 						color: $primary-grey;
+						word-spacing: .15em;
 					}
 					h2 {
 						text-transform: uppercase;
@@ -195,11 +196,12 @@ body {
 				    	background-size: 26px;
 					    width: 100%;
 					    display: block;
+					    padding-right: 36px;
 				    	h2.project-name{
 				    		font-size: 1.6em;
 				    		font-weight: 600;
 				    		float: left;
-				    		width: 500px;
+				    		width: 75%;
 				    		line-height: 100px;
 				    		margin: 0;
 				    	}
@@ -211,6 +213,9 @@ body {
 						    font-weight: 500;
 						    letter-spacing: 0.10em;
 						    color: $light-grey;
+						    white-space: nowrap;
+						    text-overflow: ellipsis;
+						    overflow: hidden;
 				    	}
 				    	.project-hover {
 			    		    position: absolute;
@@ -233,6 +238,9 @@ body {
 					    		float: left;
 					    		line-height: 80px;
 					    		transition: all .1s;
+					    		white-space: nowrap;
+					    		text-overflow: ellipsis;
+					    		overflow: hidden;
 			    		    }
 			    		    .view-section{
 			    		    	text-align: right;
@@ -298,6 +306,13 @@ body {
 			    text-transform: uppercase;
 			    font-family: 'bebasregular', sans-serif;
 			    margin: 150px 0 200px;
+			    word-spacing: .15em;
+			    .small-caps {
+			    	font-family: 'Roboto', sans-serif;
+			    	text-transform: lowercase;
+			    	font-weight: 600;
+			    	font-size: 1.2em;
+			    }
 			}
 			h2.case-excerpt{
 			    font-family: 'Martel', serif;
@@ -315,6 +330,7 @@ body {
 			    margin: 100px 0 30px;
 			    padding-bottom: 2px;
 			    font-size: 2.2em;
+			    word-spacing: .25em;
 			    &:after {
 		    	    width: 50px;
 				    display: block;
@@ -365,11 +381,31 @@ body {
 		// home page and other page styles
 		&.home-page, &.case-study-page {
 			header.header {
+				height: auto;
+				max-height: auto;
 				nav.main-nav {
 					text-align: left;
 				}
 				.about-excerpt {
 					margin-top: 100px;
+				}
+			}
+			// featured casestudy list in home page
+			.case-studies-list{
+				ul{
+					li.project-line{
+						span {
+							visibility: hidden;
+						}
+						a.project-info {
+							.project-hover {
+								width: calc(100% + 30px);
+								left: -15px;
+								padding: 0 15px;
+								background-position: right 15px top 55px !important;
+							}
+						}
+					}
 				}
 			}
 			.case-study-container{
