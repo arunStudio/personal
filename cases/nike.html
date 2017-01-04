@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nike+ Companion - Arun Jacob - Product Designer</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet"><!-- User Defined stylesheets -->    
+    <link rel="stylesheet" href="../css/fonts-face.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Martel:300,400,600|Playfair+Display:400,700,900|Dosis:300,400,500|Roboto:100,100i,300,300i,400,400i" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="case-study-page" id="top">
+
+    <!-- Preloader content -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- preloader -END -->
+
+    <!-- Color-representation -->
+    <div class="color-bg color-turquoise"></div>
+
+    <!-- main container - starts -->
+    <div class="container">
+      <header class="header normal-header">
+        <!-- the nav items will come here from jqueru .load -->
+      </header>
+      <!-- header - ends -->
+    </div>
+
+    <div class="container-fluid">
+      <!-- case-study details - Schneider WiserAir-->
+      <div class="row case-study-container">
+        <div class="col-md-12">
+          <h1 class="case-header">Nike+ Companion</h1>
+          
+          <h2 class="case-excerpt">The ultimate personal trainer—fully loaded with 100+ workouts, clear instructions on every move, and a plan to get you fitter than ever.</h2>
+          
+          <h3>Overview</h3>
+          <p>The N+KT App is an experience that will be built for the Mobile phones that allows users to take their experience using Nike + Kinect training beyond the console experience. Users will be able to view their Console activity, get notified when scheduled sessions are coming up, and connect with other XBOX/Nike+ users. </p>
+          <p>The mobile experience should recognise and reward the users hard work on console. At any time, they can open the app to view their progress towards being Athlete Fit, shown both by program and through individual session analysis. The app will act as a social hub with updates from friends and will unlock rewards to celebrate your accomplishments.</p>
+          <div style="max-width: 720px; width: 100%; margin: 20px auto;">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/Ucj0aGEUtHM?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <h3>Objective</h3>
+          <p>Get the users engaged - Get all the athletes connected to the N+KT experience outside of their living rooms to support their programs, activity, and competition with the N+KT community.</p>
+          <div style="max-width: 720px; width: 100%; margin: 20px auto;">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/ZK-leEmXwG8?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <h3>Visual Design</h3>
+          <img class="img-responsive" src="../images/cases/nike/mb1.jpg">
+          <img class="img-responsive" src="../images/cases/nike/mb2.jpg">
+
+
+        </div>
+      </div>
+      <!-- case study ends -->
+
+    </div>
+    <!-- main container - ends -->
+
+    <!-- Back to top arrow -->
+    <a href="#" id="back-to-top" title="Back to top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- User defined javascript -->
+    <script src="../js/script.js"></script>
+    <!-- User defined javascript -->
+    <script src="../js/back-top.js"></script>
+    <!-- preloader jqery code -->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+        //]]>
+
+        // Back to top
+        if ($('#back-to-top').length) {
+          var scrollTrigger = 100, // px
+              backToTop = function () {
+                  var scrollTop = $(window).scrollTop();
+                  if (scrollTop > scrollTrigger) {
+                      $('#back-to-top').addClass('show');
+                  } else {
+                      $('#back-to-top').removeClass('show');
+                  }
+              };
+          backToTop();
+          $(window).on('scroll', function () {
+              backToTop();
+          });
+          $('#back-to-top').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({
+                  scrollTop: 0
+              }, 700);
+          });
+      }
+        // Back to top ends
+    </script>
+  </body>
+</html>

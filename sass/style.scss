@@ -12,7 +12,7 @@ $white: #fff;
 body {
 	font-size: 13px;
 	// font-family: 'Open Sans', sans-serif;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', Helvetica, sans-serif;
 	color: #000;
 	font-weight: 400;
 
@@ -45,7 +45,7 @@ body {
 	}
 
 	h1, h2, h3, h4 {
-		font-family: 'Montserrat', sans-serif;
+		font-family: 'Montserrat', georgia, sans-serif;
 	}
 	a {
 		color: $primary-grey;
@@ -74,7 +74,7 @@ body {
 						font-size: 12px;
 						margin-right: 50px;
 						font-weight: 300;
-						font-family: 'Dosis', sans-serif;
+						font-family: 'Dosis', Helvetica, sans-serif;
 						a, a:focus, a:active, a:active:focus, a:visited {
 							padding: 0px;
 							border-bottom: none !important;
@@ -97,7 +97,7 @@ body {
 				font-weight: 400;
 				margin-top: 50px;
 				color: $primary-color;
-				font-family: 'bebasregular', sans-serif;
+				font-family: 'bebasregular', Helvetica, sans-serif;
 				text-align: left;
 			}
 			.about-excerpt {
@@ -109,7 +109,7 @@ body {
 						font-weight: 700;
 						margin-bottom: 15px;
 						margin-left: -3px;
-						font-family: 'bebasregular', sans-serif;
+						font-family: 'bebasregular', Helvetica, sans-serif;
 						color: $primary-grey;
 						word-spacing: .15em;
 					}
@@ -118,7 +118,7 @@ body {
 						font-size: 13px;
 						font-weight: 400;
 						color: $primary-color;
-						font-family: 'Dosis', sans-serif;
+						font-family: 'Dosis', Helvetica, sans-serif;
 						margin-top: 0;
 						letter-spacing: 0.15em;
 					}
@@ -136,7 +136,7 @@ body {
 						}
 					}
 					.find-me{
-						font-family: 'Dosis', sans-serif;
+						font-family: 'Dosis', Helvetica, sans-serif;
 					    text-transform: uppercase;
 					    font-size: 1.1em;
 					    font-weight: 500;
@@ -161,7 +161,7 @@ body {
 		// featured casestudy list in home page
 		.case-studies-list{
 			h1{
-			    font-family: 'bebasregular', sans-serif;
+			    font-family: 'bebasregular', Helvetica, sans-serif;
 			    border-bottom: 2px solid #2e3c40;
 			    color: #2e3c40;
 			    margin: 80px 0 0;
@@ -208,7 +208,7 @@ body {
 				    	.work-list p{
 				    		line-height: 100px;
 				    		margin: 0;
-				    		font-family: 'Dosis', sans-serif;
+				    		font-family: 'Dosis', Helvetica, sans-serif;
 				    		font-size: 1.1em;
 						    font-weight: 500;
 						    letter-spacing: 0.10em;
@@ -231,7 +231,7 @@ body {
 			    		    visibility: hidden;
 			    		    background-position: right 54px top 20px;
 			    		    h2{
-					    		font-family: 'Playfair Display', serif;
+					    		font-family: 'Playfair Display', Georgia, serif;
 					    		font-weight: 700;
 					    		font-size: 2em;
 					    		width: 40%;
@@ -251,7 +251,7 @@ body {
 			    		    	width: 25%;
 			    		    	float: left;
 			    		    	.label-head {
-			    		    		font-family: 'Dosis', sans-serif;
+			    		    		font-family: 'Dosis', Helvetica, sans-serif;
 								    text-transform: uppercase;
 								    font-size: 1em;
 								    font-weight: 500;
@@ -260,7 +260,7 @@ body {
 								    transition: all .1s;
 			    		    	}
 			    		    	.label-note {
-			    		    		font-family: 'Martel', serif;
+			    		    		font-family: 'Martel', Georgia, serif;
 								    font-size: 1em;
 								    margin-top: 15px;
 			    		    	}
@@ -304,18 +304,18 @@ body {
 				font-size: 6.5em;
 			    color: #2e3c40;
 			    text-transform: uppercase;
-			    font-family: 'bebasregular', sans-serif;
+			    font-family: 'bebasregular', Helvetica, sans-serif;
 			    margin: 150px 0 200px;
 			    word-spacing: .15em;
 			    .small-caps {
-			    	font-family: 'Roboto', sans-serif;
+			    	font-family: 'Roboto', Helvetica, sans-serif;
 			    	text-transform: lowercase;
 			    	font-weight: 600;
 			    	font-size: 1.2em;
 			    }
 			}
 			h2.case-excerpt{
-			    font-family: 'Martel', serif;
+			    font-family: 'Martel', Georgia, serif;
 			    font-size: 2em;
 			    line-height: 1.5em;
 			    color: #383838;
@@ -325,7 +325,7 @@ body {
 			    width: 100%;
 			}
 			h3{
-			    font-family: 'bebasregular', sans-serif;
+			    font-family: 'bebasregular', Helvetica, sans-serif;
 			    color: #111517;
 			    margin: 100px 0 30px;
 			    padding-bottom: 2px;
@@ -359,13 +359,13 @@ body {
 			}
 			blockquote {
 				border: 0;
-			    font-family: 'Martel', serif;
+			    font-family: 'Martel', Georgia, serif;
 			    line-height: 1.8em;
 			    color: #383838;
 			    label {
 			    	display: block;
 				    margin-top: 10px;
-				    font-family: 'Roboto', sans-serif;
+				    font-family: 'Roboto', Helvetica, sans-serif;
 				    font-weight: 500;
 				    font-size: 0.9em;
 				    color: $light-grey;
@@ -461,7 +461,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 10px;
+	height: 2px;
 	animation: colorgrow 2s 1;
 }
 
