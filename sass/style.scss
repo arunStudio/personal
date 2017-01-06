@@ -158,8 +158,37 @@ body {
 				}
 			}
 		}
+		// links default style 
+		.links-default {
+			font-family: 'Dosis', Helvetica, sans-serif;
+		    text-transform: uppercase;
+		    font-size: 1.1em;
+		    font-weight: 500;
+		    letter-spacing: 0.15em;
+		    color: #1caede;
+		    float: left;
+		    margin-top: 45px;
+		}
+		// Sidekick
+		.sidekicks {
+			margin-top: 150px;
+			.collaboration {
+				font-family: 'Dosis', Helvetica, sans-serif;
+			    text-transform: uppercase;
+			    font-size: 1.1em;
+			    font-weight: 500;
+			    letter-spacing: 0.15em;
+			}
+			p{
+				font-family: 'Martel', serif;
+			    font-size: 1.4em;
+			    line-height: 1.8em;
+			    color: $black;
+			    margin: 20px 0 50px 0;
+			}
+		}
 		// featured casestudy list in home page
-		.case-studies-list{
+		.case-studies-list, .lab-personal{
 			h1{
 			    font-family: 'bebasregular', Helvetica, sans-serif;
 			    border-bottom: 2px solid #2e3c40;
@@ -429,7 +458,7 @@ body {
 				}
 			}
 			// featured casestudy list in home page
-			.case-studies-list{
+			.case-studies-list, .lab-personal{
 				ul{
 					li.project-line{
 						span {
