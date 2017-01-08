@@ -128,7 +128,8 @@ body {
     float: left;
     margin-top: 45px; }
   body.home-page .sidekicks, body.case-study-page .sidekicks {
-    margin-top: 150px; }
+    margin-top: 150px;
+    float: left; }
     body.home-page .sidekicks .collaboration, body.case-study-page .sidekicks .collaboration {
       font-family: 'Dosis', Helvetica, sans-serif;
       text-transform: uppercase;
