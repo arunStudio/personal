@@ -1,4 +1,4 @@
-@import 'bourbon'; // http://bourbon.io/
+@import '0-plugins/bourbon/bourbon'; // http://bourbon.io/
 
 @import '../partials/variables'; // colors, fonts etc...
 
@@ -33,6 +33,56 @@ body {
 a {
 	color: $color-1;
 	text-decoration: none;
+}
+
+// Header styles
+
+header.header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 80px;
+	transition: top 0.2s ease-in-out;
+	z-index: 999;
+	// main navigation styles
+	nav.main-nav {
+		text-align: right;
+		ul.list-inline{
+			display: inline-block;
+			margin: 50px 0 30px;
+			li {
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-size: 12px;
+				margin-right: 50px;
+				font-weight: 300;
+				font-family: 'Dosis', Helvetica, sans-serif;
+				a, a:focus, a:active, a:active:focus, a:visited {
+					padding: 0px;
+					border-bottom: none !important;
+					transition: all .15s;
+					line-height: 3em;
+					background: none;
+					color: #2e3c40;
+				}
+				a:hover {
+					text-decoration: none;
+					border-bottom: 1px solid #2e3c40 !important;
+					padding-bottom: 7px;
+					transition: all .15s;
+				}
+			}
+		}
+	}
+	// main logo style
+	.main-logo {
+		font-size: 1.5em;
+		font-weight: 400;
+		margin-top: 50px;
+		color: #ff5c5c;
+		font-family: 'bebasregular', Helvetica, sans-serif;
+		text-align: left;
+	}
 }
 
 /* -------------------------------- 
@@ -203,6 +253,7 @@ Slide Content
 
 	@include MQ(L) {
 		height: 84vh;
+		min-height: 720px;
 		width: 90vw;
 		margin: 2vh 5vw;
 		border-radius: 10px;
@@ -215,7 +266,11 @@ Slide Content
 		}
 
 		.cd-slideshow > li:first-of-type & {
-			margin-top: 8vh;
+			margin-top: 1vh;
+			max-height: 680px;
+			.content-wrapper {
+				box-shadow: none;
+			}
 		}
 
 		.sub-slides > li:first-of-type & {
@@ -231,7 +286,7 @@ Slide Content
 			height: 100%;
 			/* hide the slide content if the slide is not selected/visible */
 			opacity: 0;
-			box-shadow: 0 6px 40px rgba(#000, .4), inset 0 1px 0 rgba(#fff, .15);
+			box-shadow: 0 0px 5px rgba(#000, .4), inset 0 1px 0 rgba(#fff, .15);
 			border-radius: inherit;
 			@include transition(opacity $animation-duration);
 		}
@@ -246,8 +301,8 @@ Slide Content
 			height: 100%;
 			width: 100%;
 			border-radius: inherit;
-			background-color: tint($background, 5%);
-			box-shadow: 0 4px 30px rgba(#000, .3), inset 0 1px 0 rgba(#fff, .1);
+			background-color: #ff5c5c;
+			box-shadow: 0 4px 5px rgba(#000, .3), inset 0 1px 0 rgba(#fff, .1);
 			opacity: 1;
 			visibility: visible;
 			@include transition(opacity $animation-duration, visibility $animation-duration);
@@ -289,7 +344,7 @@ Slideshow Navigation
 		position: fixed;
 		z-index: 1;
 		height: 100vh;
-		width: 100%;
+		width: 50%;
 		overflow: hidden;
 		top: 0;
 		left: 0;
@@ -398,7 +453,7 @@ Slideshow Navigation
 .cd-nav-trigger {
 	position: absolute;
 	z-index: 2;
-	top: 20px;
+	bottom: 20px;
 	left: 20px;
 	height: 40px;
 	width: 40px;
@@ -406,8 +461,8 @@ Slideshow Navigation
 	border-radius: 50%;
 	border: none;
 	outline: none;
-	background-color: rgba(#000, .8);
-	box-shadow: 0 2px 10px rgba(#000, .3);
+	background-color: rgba(#ff5c5c, 1);
+	box-shadow: 0 2px 3px rgba(#000, .3);
 	/* replace text with image */
 	overflow: hidden;
 	text-indent: 100%;
@@ -419,7 +474,7 @@ Slideshow Navigation
 		position: absolute;
 		height: 2px;
 		width: 18px;
-		background-color: $content;
+		background-color: $background;
 	}
 
 	span {
@@ -460,7 +515,7 @@ Slideshow Navigation
 		height: 48px;
 		width: 48px;
 		left: calc(2.5vw - 24px);
-		top: calc(4vh - 24px);
+		bottom: -96vh;
 	}
 }
 
