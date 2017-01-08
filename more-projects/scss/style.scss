@@ -22,7 +22,7 @@ html {
 
 body {
 	font: {
-		size: 1.6rem;
+		size: 13px;
 		family: $primary-font; // variables inside partials > _variables.scss
 	}
 	color: $content;
@@ -241,21 +241,35 @@ Slide Content
 		background: $color-6;
 	}
 
-	h2 {
-		font-size: 3rem;
-		color: $content;
+	h1 {
+		font-size: 4em;
+	    font-weight: 700;
+	    margin-bottom: 15px;
+	    margin-top: 100px;
+	    font-family: 'bebasregular', Helvetica, sans-serif;
+	    color: #2e3c40;
+	    word-spacing: .15em;
 	}
 
 	p {
 		margin: 1em 0 2em;
 		opacity: .6;
+		&.more-excerpt {
+			font-family: 'Martel', serif;
+		    font-size: 1.5em;
+		    line-height: 1.8em;
+		    color: #252525;
+        	margin: 35px auto 50px auto;
+		    font-weight: 400;
+		    max-width: 700px;
+		}
 	}
 
 	@include MQ(L) {
 		height: 84vh;
-		min-height: 720px;
-		width: 90vw;
-		margin: 2vh 5vw;
+		min-height: 650px;
+		width: 80vw;
+		margin: 2vh 10vw;
 		border-radius: 10px;
 		cursor: pointer;
 
@@ -266,20 +280,24 @@ Slide Content
 		}
 
 		.cd-slideshow > li:first-of-type & {
-			margin-top: 1vh;
+			margin-top: 4vh;
 			max-height: 680px;
 			.content-wrapper {
 				box-shadow: none;
 			}
+			&::after {
+				box-shadow: none;
+				background-color: transparent;
+			}
 		}
 
 		.sub-slides > li:first-of-type & {
-			margin-left: 5vw;
+			margin-left: 10vw;
 		}
 
 		.sub-slides > li & {
-			margin-left: 1.25vw;
-			margin-right: 1.25vw;
+			margin-left: 2.5vw;
+			margin-right: 2.5vw;
 		}
 
 		.content-wrapper {
@@ -301,8 +319,8 @@ Slide Content
 			height: 100%;
 			width: 100%;
 			border-radius: inherit;
-			background-color: #ff5c5c;
-			box-shadow: 0 4px 5px rgba(#000, .3), inset 0 1px 0 rgba(#fff, .1);
+			background-color: #eaeaea; //#ff5c5c;
+			box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 			opacity: 1;
 			visibility: visible;
 			@include transition(opacity $animation-duration, visibility $animation-duration);
@@ -317,9 +335,14 @@ Slide Content
 			visibility: hidden;
 		}
 
-		h2 {
-			font-size: 4rem;
-			font-weight: 300;
+		h1 {
+		    font-size: 4.5em;
+		    font-weight: 700;
+		    margin-bottom: 15px;
+		    margin-left: -3px;
+		    font-family: 'bebasregular', Helvetica, sans-serif;
+		    color: #2e3c40;
+		    word-spacing: .15em;
 		}
 
 		p {
@@ -453,27 +476,31 @@ Slideshow Navigation
 .cd-nav-trigger {
 	position: absolute;
 	z-index: 2;
-	bottom: 20px;
+	top: 20px;
 	left: 20px;
-	height: 40px;
-	width: 40px;
+	height: 30px;
+	width: 30px;
 	cursor: pointer;
 	border-radius: 50%;
 	border: none;
 	outline: none;
-	background-color: rgba(#ff5c5c, 1);
-	box-shadow: 0 2px 3px rgba(#000, .3);
+	background-color: rgba(#ff5c5c, .85);
+	box-shadow: 0 2px 3px rgba(#000, 0);
 	/* replace text with image */
 	overflow: hidden;
 	text-indent: 100%;
 	white-space: nowrap;
 	color: transparent;
+	&:hover {
+		background-color: rgba(#ff5c5c, .85);
+		box-shadow: 0 1px 2px rgba(#000, .3);
+	}
 
 	span, span::after, span::before {
 		/* used to create the menu icon */
 		position: absolute;
 		height: 2px;
-		width: 18px;
+		width: 10px;
 		background-color: $background;
 	}
 
@@ -501,7 +528,6 @@ Slideshow Navigation
 
 	.nav-open & span {
 		background-color: transparent;
-
 		&::before {
 			@include transform(rotate(45deg));
 		}
@@ -509,13 +535,19 @@ Slideshow Navigation
 		&::after {
 			@include transform(rotate(-45deg));
 		}
-	} 
+	}
+
+	.nav-open {
+		.cd-nav-trigger {
+			background-color: #7b7b7b !important;
+		}
+	}
 
 	@include MQ(L) {
-		height: 48px;
-		width: 48px;
-		left: calc(2.5vw - 24px);
-		bottom: -96vh;
+		height: 30px;
+		width: 30px;
+		left: calc(3.5vw - 15px);
+		top: calc(2.5vw - 10px);;
 	}
 }
 
