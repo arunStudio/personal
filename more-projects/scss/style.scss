@@ -531,6 +531,24 @@ Slideshow Navigation
 	}
 }
 
+@media only screen and (max-width: 1800px){
+	.cd-slider-content h3 {
+		display: none;
+	}
+
+	.cd-slider-content img {
+		max-width: 700px;
+		max-height: 70vh;
+	}
+}
+
+@media only screen and (max-width: 1500px){
+	.cd-slider-content {
+		min-height: 84vh !important;
+	}
+}
+
+
 .cd-nav-trigger {
 	position: absolute;
 	z-index: 2;
