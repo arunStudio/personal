@@ -17,7 +17,7 @@ Primary style
 }
 
 html {
-	font-size: 62.5%;
+	font-size: 13px;;
 }
 
 body {
@@ -38,18 +38,19 @@ a {
 // Header styles
 
 header.header {
-	position: fixed;
+	position: relative;
 	top: 0;
-	width: 100vw;
+	width: 1070px;
 	height: 80px;
 	transition: top 0.2s ease-in-out;
 	z-index: 999;
+	margin: 0 auto;
 	// main navigation styles
 	nav.main-nav {
 		text-align: right;
 		ul.list-inline{
 			display: inline-block;
-			margin: 50px 0 30px;
+			margin: 0 0 30px;
 			li {
 				text-transform: uppercase;
 				letter-spacing: 1px;
@@ -64,6 +65,7 @@ header.header {
 					line-height: 3em;
 					background: none;
 					color: #2e3c40;
+					font-weight: 400;
 				}
 				a:hover {
 					text-decoration: none;
@@ -78,7 +80,6 @@ header.header {
 	.main-logo {
 		font-size: 1.5em;
 		font-weight: 400;
-		margin-top: 50px;
 		color: #ff5c5c;
 		font-family: 'bebasregular', Helvetica, sans-serif;
 		text-align: left;
@@ -251,6 +252,53 @@ Slide Content
 	    word-spacing: .15em;
 	}
 
+	h2 {
+	    font-size: 6.5em;
+	    color: #2e3c40;
+	    text-transform: uppercase;
+	    font-family: 'bebasregular', Helvetica, sans-serif;
+	    // margin: 30vh 0 50px;
+	    word-spacing: .15em;
+	}
+
+	h3 {
+		font-family: 'bebasregular', Helvetica, sans-serif;
+	    color: #111517;
+	    margin: 70px 0 50px;
+	    padding-bottom: 2px;
+	    font-size: 2.2em;
+	    word-spacing: .25em;
+	    position: absolute;
+	    top: 0;
+	    text-align: center;
+	    width: 100%;
+	    &:after {
+    	    width: 50px;
+		    display: block;
+		    height: 2px;
+		    background: #111517;
+		    margin: 30px auto;
+		    content: "";
+	    }
+	}
+
+	h5 {
+		font-family: 'Martel', Georgia, serif;
+	    font-size: 2em;
+	    line-height: 1.5em;
+	    color: #383838;
+	    margin: 25px auto 50px;
+	    font-weight: lighter;
+	    max-width: 1100px;
+	    width: 100%;
+	}
+
+	img {
+		max-width: 1000px;
+		width: 90%;
+		margin: 0 auto;
+	}
+
 	p {
 		margin: 1em 0 2em;
 		opacity: .6;
@@ -262,6 +310,13 @@ Slide Content
         	margin: 35px auto 50px auto;
 		    font-weight: 400;
 		    max-width: 700px;
+		}
+		&.role, &.year {
+			text-transform: uppercase;
+		    letter-spacing: 1px;
+		    font-size: 13px;
+		    font-weight: 300;
+		    font-family: 'Dosis', Helvetica, sans-serif;
 		}
 	}
 
@@ -371,7 +426,7 @@ Slideshow Navigation
 		overflow: hidden;
 		top: 0;
 		left: 0;
-		background-color: darken($background, 10%);
+		background-color: #2e3c40;
 		@include transform(translateX(-100%));
 		@include transition(transform .3s);
 
@@ -391,18 +446,17 @@ Slideshow Navigation
 		display: inline-block;
 		margin-bottom: .8em;
 
-		&:before {
-			/* list bullets */
-			position: relative;
-			content: '';
-			display: inline-block;
-			width: 8px;
-			height: 8px;
-			background: tint($background, 30%);
-			border-radius: 50%;
-			margin-right: .4em;
-			@include transform(translateY(-2px));
-		}
+		// /* list bullets */ &:before {}
+		// 	position: relative;
+		// 	content: '';
+		// 	display: inline-block;
+		// 	width: 8px;
+		// 	height: 8px;
+		// 	background: tint($background, 30%);
+		// 	border-radius: 50%;
+		// 	margin-right: .4em;
+		// 	@include transform(translateY(-2px));
+		// }
 	}
 
 	&.nav-open .cd-nav-items {
@@ -425,19 +479,23 @@ Slideshow Navigation
 		a {
 			font-weight: bold;
 			color: tint($background, 20%);
-			font-size: 4rem;
+			font-size: 1.5rem;
 			@include transition(all .2s);
+			font-family: 'Dosis', Helvetica, sans-serif;
+		    font-weight: 500;
+		    line-height: 1.5em;
 
 			&:before {
 				/* list bullets */
-				width: 24px;
-				height: 24px;
-				@include transform(translateY(-2px));
-				@include transition(all .2s);
+				// width: 24px;
+				// height: 24px;
+				// @include transform(translateY(-2px));
+				// @include transition(all .2s);
 			}
 
 			.no-touch &:hover {
-				color: $content;
+				color: #ff5c5c;
+				text-decoration: none;
 			}
 		}
 
