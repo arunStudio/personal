@@ -15,7 +15,31 @@ body {
   color: #000;
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  /* Preloader */ }
+  body #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999999;
+    /* makes sure it stays on top */ }
+  body #status {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../../images/preloader/copper-loader.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -150px 0 0 -200px;
+    /* is width and height divided by two */ }
 
 a {
   color: #ffffff;
@@ -23,7 +47,7 @@ a {
 
 header.header {
   position: relative;
-  top: 0;
+  top: -20px;
   width: 1070px;
   height: 80px;
   transition: top 0.2s ease-in-out;
@@ -416,6 +440,35 @@ Slideshow Navigation
 @media only screen and (max-width: 1500px) {
   .cd-slider-content {
     min-height: 84vh !important; } }
+.back-home {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 92, 92, 0.85);
+  box-shadow: 0 2px 3px transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent; }
+  .back-home span {
+    color: white;
+    line-height: 27px;
+    width: 30px;
+    font-size: 12px;
+    left: 9px; }
+  @media only screen and (min-width: 1100px) {
+    .back-home {
+      height: 30px;
+      width: 30px;
+      left: calc(3.5vw - 15px);
+      top: calc(4.5vw - 10px); } }
+
 .cd-nav-trigger {
   position: absolute;
   z-index: 2;
