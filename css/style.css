@@ -142,29 +142,29 @@ body {
       line-height: 1.8em;
       color: #000;
       margin: 20px 0 50px 0; }
-  body.home-page .case-studies-list h1, body.home-page .lab-personal h1, body.case-study-page .case-studies-list h1, body.case-study-page .lab-personal h1 {
+  body.home-page .case-studies-list h1, body.home-page .lab-personal h1, body.home-page .approach-section h1, body.case-study-page .case-studies-list h1, body.case-study-page .lab-personal h1, body.case-study-page .approach-section h1 {
     font-family: 'bebasregular', Helvetica, sans-serif;
     border-bottom: 2px solid #2e3c40;
     color: #2e3c40;
     margin: 80px 0 0;
     padding-bottom: 10px; }
-  body.home-page .case-studies-list ul, body.home-page .lab-personal ul, body.case-study-page .case-studies-list ul, body.case-study-page .lab-personal ul {
+  body.home-page .case-studies-list ul, body.home-page .lab-personal ul, body.home-page .approach-section ul, body.case-study-page .case-studies-list ul, body.case-study-page .lab-personal ul, body.case-study-page .approach-section ul {
     padding: 0; }
-    body.home-page .case-studies-list ul li.project-line, body.home-page .lab-personal ul li.project-line, body.case-study-page .case-studies-list ul li.project-line, body.case-study-page .lab-personal ul li.project-line {
+    body.home-page .case-studies-list ul li.project-line, body.home-page .lab-personal ul li.project-line, body.home-page .approach-section ul li.project-line, body.case-study-page .case-studies-list ul li.project-line, body.case-study-page .lab-personal ul li.project-line, body.case-study-page .approach-section ul li.project-line {
       list-style: none;
       float: left;
       width: 100%;
       height: 100px;
       display: block; }
-      body.home-page .case-studies-list ul li.project-line:first-child a.project-info, body.home-page .lab-personal ul li.project-line:first-child a.project-info, body.case-study-page .case-studies-list ul li.project-line:first-child a.project-info, body.case-study-page .lab-personal ul li.project-line:first-child a.project-info {
+      body.home-page .case-studies-list ul li.project-line:first-child a.project-info, body.home-page .lab-personal ul li.project-line:first-child a.project-info, body.home-page .approach-section ul li.project-line:first-child a.project-info, body.case-study-page .case-studies-list ul li.project-line:first-child a.project-info, body.case-study-page .lab-personal ul li.project-line:first-child a.project-info, body.case-study-page .approach-section ul li.project-line:first-child a.project-info {
         border-top: 1px solid #d4d4d4; }
-      body.home-page .case-studies-list ul li.project-line:first-child a.project-info:hover, body.home-page .lab-personal ul li.project-line:first-child a.project-info:hover, body.case-study-page .case-studies-list ul li.project-line:first-child a.project-info:hover, body.case-study-page .lab-personal ul li.project-line:first-child a.project-info:hover {
+      body.home-page .case-studies-list ul li.project-line:first-child a.project-info:hover, body.home-page .lab-personal ul li.project-line:first-child a.project-info:hover, body.home-page .approach-section ul li.project-line:first-child a.project-info:hover, body.case-study-page .case-studies-list ul li.project-line:first-child a.project-info:hover, body.case-study-page .lab-personal ul li.project-line:first-child a.project-info:hover, body.case-study-page .approach-section ul li.project-line:first-child a.project-info:hover {
         border-top: 1px solid transparent; }
-      body.home-page .case-studies-list ul li.project-line span, body.home-page .lab-personal ul li.project-line span, body.case-study-page .case-studies-list ul li.project-line span, body.case-study-page .lab-personal ul li.project-line span {
+      body.home-page .case-studies-list ul li.project-line span, body.home-page .lab-personal ul li.project-line span, body.home-page .approach-section ul li.project-line span, body.case-study-page .case-studies-list ul li.project-line span, body.case-study-page .lab-personal ul li.project-line span, body.case-study-page .approach-section ul li.project-line span {
         line-height: 100px;
         position: absolute;
         left: -60px; }
-      body.home-page .case-studies-list ul li.project-line a.project-info, body.home-page .lab-personal ul li.project-line a.project-info, body.case-study-page .case-studies-list ul li.project-line a.project-info, body.case-study-page .lab-personal ul li.project-line a.project-info {
+      body.home-page .case-studies-list ul li.project-line a.project-info, body.home-page .lab-personal ul li.project-line a.project-info, body.home-page .approach-section ul li.project-line a.project-info, body.case-study-page .case-studies-list ul li.project-line a.project-info, body.case-study-page .lab-personal ul li.project-line a.project-info, body.case-study-page .approach-section ul li.project-line a.project-info {
         text-decoration: none;
         cursor: pointer;
         position: relative;
@@ -175,14 +175,14 @@ body {
         width: 100%;
         display: block;
         padding-right: 36px; }
-        body.home-page .case-studies-list ul li.project-line a.project-info h2.project-name, body.home-page .lab-personal ul li.project-line a.project-info h2.project-name, body.case-study-page .case-studies-list ul li.project-line a.project-info h2.project-name, body.case-study-page .lab-personal ul li.project-line a.project-info h2.project-name {
+        body.home-page .case-studies-list ul li.project-line a.project-info h2.project-name, body.home-page .lab-personal ul li.project-line a.project-info h2.project-name, body.home-page .approach-section ul li.project-line a.project-info h2.project-name, body.case-study-page .case-studies-list ul li.project-line a.project-info h2.project-name, body.case-study-page .lab-personal ul li.project-line a.project-info h2.project-name, body.case-study-page .approach-section ul li.project-line a.project-info h2.project-name {
           font-size: 1.6em;
           font-weight: 600;
           float: left;
           width: 75%;
           line-height: 100px;
           margin: 0; }
-        body.home-page .case-studies-list ul li.project-line a.project-info .work-list p, body.home-page .lab-personal ul li.project-line a.project-info .work-list p, body.case-study-page .case-studies-list ul li.project-line a.project-info .work-list p, body.case-study-page .lab-personal ul li.project-line a.project-info .work-list p {
+        body.home-page .case-studies-list ul li.project-line a.project-info .work-list p, body.home-page .lab-personal ul li.project-line a.project-info .work-list p, body.home-page .approach-section ul li.project-line a.project-info .work-list p, body.case-study-page .case-studies-list ul li.project-line a.project-info .work-list p, body.case-study-page .lab-personal ul li.project-line a.project-info .work-list p, body.case-study-page .approach-section ul li.project-line a.project-info .work-list p {
           line-height: 100px;
           margin: 0;
           font-family: 'Dosis', Helvetica, sans-serif;
@@ -193,7 +193,7 @@ body {
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden; }
-        body.home-page .case-studies-list ul li.project-line a.project-info .project-hover, body.home-page .lab-personal ul li.project-line a.project-info .project-hover, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover {
+        body.home-page .case-studies-list ul li.project-line a.project-info .project-hover, body.home-page .lab-personal ul li.project-line a.project-info .project-hover, body.home-page .approach-section ul li.project-line a.project-info .project-hover, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover {
           position: absolute;
           width: calc(100% + 46%);
           left: -40%;
@@ -206,7 +206,7 @@ body {
           padding: 0 25px;
           visibility: hidden;
           background-position: right 54px top 20px; }
-          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover h2, body.home-page .lab-personal ul li.project-line a.project-info .project-hover h2, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover h2, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover h2 {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover h2, body.home-page .lab-personal ul li.project-line a.project-info .project-hover h2, body.home-page .approach-section ul li.project-line a.project-info .project-hover h2, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover h2, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover h2, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover h2 {
             font-family: 'Playfair Display', Georgia, serif;
             font-weight: 700;
             font-size: 2em;
@@ -217,14 +217,14 @@ body {
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden; }
-          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .view-section {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .view-section, body.home-page .approach-section ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .view-section {
             text-align: right;
             position: relative;
             right: 26px; }
-          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .role-list, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .year-section, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .role-list, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .view-section {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .role-list, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .year-section, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .view-section, body.home-page .approach-section ul li.project-line a.project-info .project-hover .role-list, body.home-page .approach-section ul li.project-line a.project-info .project-hover .year-section, body.home-page .approach-section ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .role-list, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .view-section, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .role-list, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .view-section {
             width: 25%;
             float: left; }
-            body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-head, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-head, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-head, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .role-list .label-head, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .year-section .label-head, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .view-section .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-head, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .role-list .label-head, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .year-section .label-head, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .view-section .label-head {
+            body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-head, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-head, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-head, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .role-list .label-head, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .year-section .label-head, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .view-section .label-head, body.home-page .approach-section ul li.project-line a.project-info .project-hover .role-list .label-head, body.home-page .approach-section ul li.project-line a.project-info .project-hover .year-section .label-head, body.home-page .approach-section ul li.project-line a.project-info .project-hover .view-section .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-head, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .role-list .label-head, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .year-section .label-head, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .view-section .label-head, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .role-list .label-head, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .year-section .label-head, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .view-section .label-head {
               font-family: 'Dosis', Helvetica, sans-serif;
               text-transform: uppercase;
               font-size: 1em;
@@ -232,16 +232,16 @@ body {
               letter-spacing: 0.15em;
               margin-top: 15px;
               transition: all .1s; }
-            body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-note, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-note, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-note, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .role-list .label-note, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .year-section .label-note, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .view-section .label-note, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-note, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-note, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-note, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .role-list .label-note, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .year-section .label-note, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .view-section .label-note {
+            body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-note, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-note, body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-note, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .role-list .label-note, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .year-section .label-note, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .view-section .label-note, body.home-page .approach-section ul li.project-line a.project-info .project-hover .role-list .label-note, body.home-page .approach-section ul li.project-line a.project-info .project-hover .year-section .label-note, body.home-page .approach-section ul li.project-line a.project-info .project-hover .view-section .label-note, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .role-list .label-note, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section .label-note, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .view-section .label-note, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .role-list .label-note, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .year-section .label-note, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .view-section .label-note, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .role-list .label-note, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .year-section .label-note, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .view-section .label-note {
               font-family: 'Martel', Georgia, serif;
               font-size: 1em;
               margin-top: 15px; }
-          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .year-section {
+          body.home-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.home-page .lab-personal ul li.project-line a.project-info .project-hover .year-section, body.home-page .approach-section ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .case-studies-list ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .lab-personal ul li.project-line a.project-info .project-hover .year-section, body.case-study-page .approach-section ul li.project-line a.project-info .project-hover .year-section {
             width: 10%;
             text-align: center; }
-        body.home-page .case-studies-list ul li.project-line a.project-info:hover, body.home-page .lab-personal ul li.project-line a.project-info:hover, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover, body.case-study-page .lab-personal ul li.project-line a.project-info:hover {
+        body.home-page .case-studies-list ul li.project-line a.project-info:hover, body.home-page .lab-personal ul li.project-line a.project-info:hover, body.home-page .approach-section ul li.project-line a.project-info:hover, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover, body.case-study-page .lab-personal ul li.project-line a.project-info:hover, body.case-study-page .approach-section ul li.project-line a.project-info:hover {
           border-bottom: 1px solid transparent; }
-          body.home-page .case-studies-list ul li.project-line a.project-info:hover .project-hover, body.home-page .lab-personal ul li.project-line a.project-info:hover .project-hover, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover .project-hover, body.case-study-page .lab-personal ul li.project-line a.project-info:hover .project-hover {
+          body.home-page .case-studies-list ul li.project-line a.project-info:hover .project-hover, body.home-page .lab-personal ul li.project-line a.project-info:hover .project-hover, body.home-page .approach-section ul li.project-line a.project-info:hover .project-hover, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover .project-hover, body.case-study-page .lab-personal ul li.project-line a.project-info:hover .project-hover, body.case-study-page .approach-section ul li.project-line a.project-info:hover .project-hover {
             background-image: url(../images/arrow.svg);
             background-position: right 54px top 60px;
             background-repeat: no-repeat;
@@ -250,12 +250,31 @@ body {
             transition: all .15s, background-position .4s;
             height: 100px;
             visibility: visible; }
-            body.home-page .case-studies-list ul li.project-line a.project-info:hover .project-hover h2, body.home-page .lab-personal ul li.project-line a.project-info:hover .project-hover h2, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover .project-hover h2, body.case-study-page .lab-personal ul li.project-line a.project-info:hover .project-hover h2 {
+            body.home-page .case-studies-list ul li.project-line a.project-info:hover .project-hover h2, body.home-page .lab-personal ul li.project-line a.project-info:hover .project-hover h2, body.home-page .approach-section ul li.project-line a.project-info:hover .project-hover h2, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover .project-hover h2, body.case-study-page .lab-personal ul li.project-line a.project-info:hover .project-hover h2, body.case-study-page .approach-section ul li.project-line a.project-info:hover .project-hover h2 {
               line-height: 100px;
               transition: all .35s; }
-            body.home-page .case-studies-list ul li.project-line a.project-info:hover .project-hover .label-head, body.home-page .lab-personal ul li.project-line a.project-info:hover .project-hover .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover .project-hover .label-head, body.case-study-page .lab-personal ul li.project-line a.project-info:hover .project-hover .label-head {
+            body.home-page .case-studies-list ul li.project-line a.project-info:hover .project-hover .label-head, body.home-page .lab-personal ul li.project-line a.project-info:hover .project-hover .label-head, body.home-page .approach-section ul li.project-line a.project-info:hover .project-hover .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover .project-hover .label-head, body.case-study-page .lab-personal ul li.project-line a.project-info:hover .project-hover .label-head, body.case-study-page .approach-section ul li.project-line a.project-info:hover .project-hover .label-head {
               margin-top: 25px;
               transition: all .35s; }
+  body.home-page .case-studies-list .approach-box, body.home-page .lab-personal .approach-box, body.home-page .approach-section .approach-box, body.case-study-page .case-studies-list .approach-box, body.case-study-page .lab-personal .approach-box, body.case-study-page .approach-section .approach-box {
+    height: 300px;
+    text-align: center;
+    margin-top: 100px; }
+    body.home-page .case-studies-list .approach-box h5, body.home-page .lab-personal .approach-box h5, body.home-page .approach-section .approach-box h5, body.case-study-page .case-studies-list .approach-box h5, body.case-study-page .lab-personal .approach-box h5, body.case-study-page .approach-section .approach-box h5 {
+      font-family: 'Montserrat', georgia, sans-serif;
+      font-size: 1.4em;
+      font-weight: 600;
+      margin: 30px auto;
+      color: #565656; }
+    body.home-page .case-studies-list .approach-box img, body.home-page .lab-personal .approach-box img, body.home-page .approach-section .approach-box img, body.case-study-page .case-studies-list .approach-box img, body.case-study-page .lab-personal .approach-box img, body.case-study-page .approach-section .approach-box img {
+      width: 100px;
+      margin: 0 auto; }
+    body.home-page .case-studies-list .approach-box p, body.home-page .lab-personal .approach-box p, body.home-page .approach-section .approach-box p, body.case-study-page .case-studies-list .approach-box p, body.case-study-page .lab-personal .approach-box p, body.case-study-page .approach-section .approach-box p {
+      font-size: 1.1em;
+      line-height: 2rem;
+      width: 100%;
+      color: #6d6d6d;
+      font-weight: 300; }
   body.home-page .case-study-container, body.case-study-page .case-study-container {
     font-size: 14px;
     text-align: center; }
