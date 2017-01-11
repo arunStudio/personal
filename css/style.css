@@ -129,7 +129,8 @@ body {
     margin-top: 45px; }
   body.home-page .sidekicks, body.case-study-page .sidekicks {
     margin-top: 150px;
-    float: left; }
+    float: left;
+    margin-bottom: 50px; }
     body.home-page .sidekicks .collaboration, body.case-study-page .sidekicks .collaboration {
       font-family: 'Dosis', Helvetica, sans-serif;
       text-transform: uppercase;
@@ -256,25 +257,37 @@ body {
             body.home-page .case-studies-list ul li.project-line a.project-info:hover .project-hover .label-head, body.home-page .lab-personal ul li.project-line a.project-info:hover .project-hover .label-head, body.home-page .approach-section ul li.project-line a.project-info:hover .project-hover .label-head, body.case-study-page .case-studies-list ul li.project-line a.project-info:hover .project-hover .label-head, body.case-study-page .lab-personal ul li.project-line a.project-info:hover .project-hover .label-head, body.case-study-page .approach-section ul li.project-line a.project-info:hover .project-hover .label-head {
               margin-top: 25px;
               transition: all .35s; }
-  body.home-page .case-studies-list .approach-box, body.home-page .lab-personal .approach-box, body.home-page .approach-section .approach-box, body.case-study-page .case-studies-list .approach-box, body.case-study-page .lab-personal .approach-box, body.case-study-page .approach-section .approach-box {
-    height: 300px;
-    text-align: center;
-    margin-top: 100px; }
-    body.home-page .case-studies-list .approach-box h5, body.home-page .lab-personal .approach-box h5, body.home-page .approach-section .approach-box h5, body.case-study-page .case-studies-list .approach-box h5, body.case-study-page .lab-personal .approach-box h5, body.case-study-page .approach-section .approach-box h5 {
-      font-family: 'Montserrat', georgia, sans-serif;
-      font-size: 1.4em;
-      font-weight: 600;
-      margin: 30px auto;
-      color: #565656; }
-    body.home-page .case-studies-list .approach-box img, body.home-page .lab-personal .approach-box img, body.home-page .approach-section .approach-box img, body.case-study-page .case-studies-list .approach-box img, body.case-study-page .lab-personal .approach-box img, body.case-study-page .approach-section .approach-box img {
-      width: 100px;
+  body.home-page .approach-container, body.case-study-page .approach-container {
+    background: url(../images/approach-bg.jpg) center center no-repeat #000;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    body.home-page .approach-container .approach-section, body.case-study-page .approach-container .approach-section {
+      width: 1100px;
       margin: 0 auto; }
-    body.home-page .case-studies-list .approach-box p, body.home-page .lab-personal .approach-box p, body.home-page .approach-section .approach-box p, body.case-study-page .case-studies-list .approach-box p, body.case-study-page .lab-personal .approach-box p, body.case-study-page .approach-section .approach-box p {
-      font-size: 1.1em;
-      line-height: 2rem;
-      color: #6d6d6d;
-      font-weight: 300;
-      padding: 0 15px; }
+      body.home-page .approach-container .approach-section h1, body.case-study-page .approach-container .approach-section h1 {
+        color: #fff;
+        border-bottom-color: #fff; }
+      body.home-page .approach-container .approach-section .approach-box, body.case-study-page .approach-container .approach-section .approach-box {
+        height: 300px;
+        text-align: center;
+        margin-top: 100px; }
+        body.home-page .approach-container .approach-section .approach-box h5, body.case-study-page .approach-container .approach-section .approach-box h5 {
+          font-family: 'Montserrat', georgia, sans-serif;
+          font-size: 1.4em;
+          font-weight: 400;
+          margin: 30px auto 20px;
+          color: #fff; }
+        body.home-page .approach-container .approach-section .approach-box img, body.case-study-page .approach-container .approach-section .approach-box img {
+          width: 100px;
+          margin: 0 auto; }
+        body.home-page .approach-container .approach-section .approach-box p, body.case-study-page .approach-container .approach-section .approach-box p {
+          font-size: 1.1em;
+          line-height: 2rem;
+          color: #6d6d6d;
+          font-weight: 300;
+          padding: 0 15px;
+          color: #fff; }
   body.home-page .case-study-container, body.case-study-page .case-study-container {
     font-size: 14px;
     text-align: center; }
@@ -439,7 +452,7 @@ body {
   width: 32px;
   height: 32px;
   text-align: center;
-  line-height: 30px;
+  line-height: 32px;
   background: #ececec;
   color: #444;
   cursor: pointer;

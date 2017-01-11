@@ -173,6 +173,7 @@ body {
 		.sidekicks {
 			margin-top: 150px;
 			float: left;
+			margin-bottom: 50px;
 			.collaboration {
 				font-family: 'Dosis', Helvetica, sans-serif;
 			    text-transform: uppercase;
@@ -325,27 +326,43 @@ body {
 				    }
 				}
 			}
-			.approach-box{ 
-				height: 300px;
-				text-align: center;
-				margin-top: 100px;
-				h5 {
-					font-family: 'Montserrat', georgia, sans-serif;
-					font-size: 1.4em;
-				    font-weight: 600;
-				    margin: 30px auto;
-				    color: #565656;
+		}
+
+		.approach-container {
+			background: url(../images/approach-bg.jpg) center center no-repeat #000;
+    		background-size: cover;
+    		padding-top: 50px;
+    		padding-bottom: 50px;
+			.approach-section {
+				width: 1100px;
+				margin: 0 auto;
+				h1 {
+					color: $white;
+					border-bottom-color: $white;
 				}
-				img {
-					width: 100px;
-					margin: 0 auto;
-				}
-				p {
-					font-size: 1.1em;
-				    line-height: 2rem;
-				    color: #6d6d6d;
-    				font-weight: 300;
-    				padding: 0 15px;
+				.approach-box{ 
+					height: 300px;
+					text-align: center;
+					margin-top: 100px;
+					h5 {
+						font-family: 'Montserrat', georgia, sans-serif;
+						font-size: 1.4em;
+					    font-weight: 400;
+					    margin: 30px auto 20px;
+					    color: $white;
+					}
+					img {
+						width: 100px;
+						margin: 0 auto;
+					}
+					p {
+						font-size: 1.1em;
+					    line-height: 2rem;
+					    color: #6d6d6d;
+	    				font-weight: 300;
+	    				padding: 0 15px;
+	    				color: $white;
+					}
 				}
 			}
 		}
@@ -567,7 +584,7 @@ body {
     width: 32px;
     height: 32px;
     text-align: center;
-    line-height: 30px;
+    line-height: 32px;
     background: #ececec;
     color: #444;
     cursor: pointer;
