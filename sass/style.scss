@@ -9,6 +9,10 @@ $white: #fff;
 	width: 1100px;
 }
 
+.cases-container {
+	background-color: #f1f1f1;
+}
+
 body {
 	font-size: 13px;
 	// font-family: 'Open Sans', sans-serif;
@@ -171,9 +175,13 @@ body {
 		}
 		// Sidekick
 		.sidekicks {
+			max-width: 1100px;
+			width: 100%;
 			margin-top: 150px;
 			float: left;
-			margin-bottom: 50px;
+			margin-bottom: 80px;
+			padding: 50px 50px 0px;
+			background-color: #ececec;
 			.collaboration {
 				font-family: 'Dosis', Helvetica, sans-serif;
 			    text-transform: uppercase;
@@ -191,6 +199,9 @@ body {
 		}
 		// featured casestudy list, lab section, approach section in home page
 		.case-studies-list, .lab-personal, .approach-section{
+			max-width: 1100px;
+			width: 100%;
+			margin: 0 auto;
 			h1{
 			    font-family: 'bebasregular', Helvetica, sans-serif;
 			    border-bottom: 2px solid #2e3c40;
@@ -334,7 +345,6 @@ body {
     		padding-top: 50px;
     		padding-bottom: 50px;
 			.approach-section {
-				width: 1100px;
 				margin: 0 auto;
 				h1 {
 					color: $white;
@@ -500,6 +510,7 @@ body {
 			}
 			// featured casestudy list in home page
 			.case-studies-list, .lab-personal{
+				width: 90%;
 				ul{
 					li.project-line{
 						span {
@@ -520,6 +531,16 @@ body {
 				font-size: 10px;
 				p{
 					line-height: 2.5rem
+				}
+			}
+			.approach-container {
+				.approach-section {
+					width: 90%;
+					.approach-box {
+						width: 60%;
+						margin: 40px auto;
+						font-size: 12px;
+					}
 				}
 			}
 		}
