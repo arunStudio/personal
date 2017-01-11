@@ -272,9 +272,9 @@ body {
     body.home-page .case-studies-list .approach-box p, body.home-page .lab-personal .approach-box p, body.home-page .approach-section .approach-box p, body.case-study-page .case-studies-list .approach-box p, body.case-study-page .lab-personal .approach-box p, body.case-study-page .approach-section .approach-box p {
       font-size: 1.1em;
       line-height: 2rem;
-      width: 100%;
       color: #6d6d6d;
-      font-weight: 300; }
+      font-weight: 300;
+      padding: 0 15px; }
   body.home-page .case-study-container, body.case-study-page .case-study-container {
     font-size: 14px;
     text-align: center; }

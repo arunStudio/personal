@@ -9,6 +9,9 @@ Primary style
 html {
   font-size: 13px; }
 
+.container {
+  width: 1100px; }
+
 body {
   font-size: 13px;
   font-family: "Roboto", sans-serif;
@@ -47,8 +50,7 @@ a {
 
 header.header {
   position: relative;
-  top: -20px;
-  width: 1070px;
+  width: 1000px;
   height: 80px;
   transition: top 0.2s ease-in-out;
   z-index: 999;
@@ -441,9 +443,9 @@ Slideshow Navigation
   .cd-slider-content {
     min-height: 84vh !important; } }
 .back-home {
-  position: absolute;
+  position: fixed;
   z-index: 2;
-  top: 20px;
+  top: 60px;
   left: 20px;
   height: 30px;
   width: 30px;
@@ -467,7 +469,7 @@ Slideshow Navigation
       height: 30px;
       width: 30px;
       left: calc(3.5vw - 15px);
-      top: calc(4.5vw - 10px); } }
+      top: calc(5vw - 10px); } }
 
 .cd-nav-trigger {
   position: absolute;
