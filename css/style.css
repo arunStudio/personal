@@ -73,7 +73,7 @@ body {
           text-transform: uppercase;
           letter-spacing: 1px;
           font-size: 12px;
-          margin-right: 50px;
+          margin-left: 50px;
           font-weight: 300;
           font-family: 'Dosis', Helvetica, sans-serif; }
           body.home-page header.header nav.main-nav ul.list-inline li a, body.home-page header.header nav.main-nav ul.list-inline li a:focus, body.home-page header.header nav.main-nav ul.list-inline li a:active, body.home-page header.header nav.main-nav ul.list-inline li a:active:focus, body.home-page header.header nav.main-nav ul.list-inline li a:visited, body.case-study-page header.header nav.main-nav ul.list-inline li a, body.case-study-page header.header nav.main-nav ul.list-inline li a:focus, body.case-study-page header.header nav.main-nav ul.list-inline li a:active, body.case-study-page header.header nav.main-nav ul.list-inline li a:active:focus, body.case-study-page header.header nav.main-nav ul.list-inline li a:visited {
