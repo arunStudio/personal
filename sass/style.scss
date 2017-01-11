@@ -76,7 +76,7 @@ body {
 		header.header {
 			min-height: 780px;
 			height: 100vh;
-			max-width: 1100px;
+			max-width: 1000px;
 			width: 90%;
 			margin: 0 auto;
 			&.normal-header {
@@ -172,6 +172,9 @@ body {
 						    	}
 						    	a {
 								    color: #1caede;
+								    &:hover {
+								    	text-decoration: none;
+								    }
 								}
 						    }
 						}
@@ -416,6 +419,9 @@ body {
 				    	}
 				    	a {
 						    color: #1caede;
+						    &:hover {
+						    	text-decoration: none;
+						    }
 						}
 				    }
 				}
