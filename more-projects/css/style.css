@@ -37,7 +37,7 @@ body {
     /* centers the loading animation horizontally one the screen */
     top: 50%;
     /* centers the loading animation vertically one the screen */
-    background-image: url(../../images/preloader/copper-loader.gif);
+    background-image: url(../../images/preloader/dot-load.gif);
     /* path to your loading animation */
     background-repeat: no-repeat;
     background-position: center;
