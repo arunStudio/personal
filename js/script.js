@@ -11,3 +11,8 @@ $(document).ready(function() {
 $(document).ready(function(){
     $(".header").load("top-header.html");
 });
+
+// include footer
+$(document).ready(function(){
+    $(".footer").load("footer-contact.html");
+});
