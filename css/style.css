@@ -335,12 +335,16 @@ body {
             margin: 0 15px; }
           body.home-page .contact-section .find-me ul li a, body.home-page .contact-section-small .find-me ul li a, body.case-study-page .contact-section .find-me ul li a, body.case-study-page .contact-section-small .find-me ul li a {
             color: #1caede; }
-  body.home-page .contact-section-small, body.case-study-page .contact-section-small {
-    background-color: #f1f1f1;
-    max-width: 1100px;
-    width: 90%;
-    padding-top: 100px;
-    padding-bottom: 100px; }
+  body.home-page .footer-container, body.case-study-page .footer-container {
+    background-color: #f1f1f1; }
+    body.home-page .footer-container .contact-section-small, body.case-study-page .footer-container .contact-section-small {
+      max-width: 1100px;
+      width: 90%;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background: none;
+      margin: 0 auto;
+      min-height: 260px; }
   body.home-page .lab-personal .lab-box, body.case-study-page .lab-personal .lab-box {
     margin-top: 30px; }
     body.home-page .lab-personal .lab-box a, body.case-study-page .lab-personal .lab-box a {
@@ -432,6 +436,61 @@ body {
     body.home-page .case-study-container .wiserair-quotes, body.case-study-page .case-study-container .wiserair-quotes {
       background: url(../images/cases/wiserair/quotes.jpg) center center no-repeat;
       background-size: cover; }
+  body.home-page .page-select, body.case-study-page .page-select {
+    margin-bottom: 50px;
+    margin-top: 50; }
+    body.home-page .page-select a, body.case-study-page .page-select a {
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      z-index: 99;
+      border: 1px solid #d4d4d4;
+      display: block;
+      text-align: center;
+      transition: all 0.2s ease-out; }
+      body.home-page .page-select a:first-child, body.case-study-page .page-select a:first-child {
+        border-left: 0px;
+        border-right: 0px;
+        background: url(../images/arrow-left.svg) left 30px center no-repeat;
+        background-size: 26px;
+        text-align: right; }
+        body.home-page .page-select a:first-child h2, body.case-study-page .page-select a:first-child h2 {
+          width: 85%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          float: right; }
+        body.home-page .page-select a:first-child:hover, body.case-study-page .page-select a:first-child:hover {
+          background: url(../images/arrow-left-white.svg) left 15px center no-repeat #2e3c40;
+          background-size: 26px;
+          transition: all 0.2s ease-out; }
+      body.home-page .page-select a:last-child, body.case-study-page .page-select a:last-child {
+        border-right: 0px;
+        border-left: 0px;
+        background: url(../images/arrow.svg) right 30px center no-repeat;
+        background-size: 26px;
+        text-align: left; }
+        body.home-page .page-select a:last-child h2, body.case-study-page .page-select a:last-child h2 {
+          width: 85%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+        body.home-page .page-select a:last-child:hover, body.case-study-page .page-select a:last-child:hover {
+          background: url(../images/arrow-white.svg) right 15px center no-repeat #2e3c40;
+          background-size: 26px;
+          transition: all 0.2s ease-out; }
+      body.home-page .page-select a:hover, body.case-study-page .page-select a:hover {
+        background-color: #2e3c40;
+        transition: all 0.2s ease-out; }
+        body.home-page .page-select a:hover h2, body.case-study-page .page-select a:hover h2 {
+          color: #ff5c5c; }
+      body.home-page .page-select a h2, body.case-study-page .page-select a h2 {
+        font-size: 1.6em;
+        font-weight: 600;
+        line-height: 100px;
+        margin: 0;
+        font-family: 'Montserrat', georgia, sans-serif;
+        text-align: center; }
 
 @media only screen and (max-width: 1100px) {
   .container {
@@ -464,7 +523,22 @@ body {
       body.home-page .approach-container .approach-section .approach-box, body.case-study-page .approach-container .approach-section .approach-box {
         width: 60%;
         margin: 40px auto;
-        font-size: 12px; } }
+        font-size: 12px; }
+    body.home-page .page-select a, body.case-study-page .page-select a {
+      float: left;
+      width: 100%;
+      background-image: none !important;
+      border-left: 0;
+      border-right: 0; }
+      body.home-page .page-select a:first-child h2, body.home-page .page-select a:last-child h2, body.case-study-page .page-select a:first-child h2, body.case-study-page .page-select a:last-child h2 {
+        width: 100%; }
+      body.home-page .page-select a:first-child:hover, body.home-page .page-select a:last-child:hover, body.case-study-page .page-select a:first-child:hover, body.case-study-page .page-select a:last-child:hover {
+        background: #2e3c40;
+        background-image: none; }
+      body.home-page .page-select a:hover, body.case-study-page .page-select a:hover {
+        background-color: #2e3c40; }
+        body.home-page .page-select a:hover h2, body.case-study-page .page-select a:hover h2 {
+          color: #ff5c5c; } }
 .color-bg {
   position: absolute;
   top: 0;
@@ -520,7 +594,7 @@ body {
   height: 32px;
   text-align: center;
   line-height: 32px;
-  background: #ececec;
+  background: #e1e1e1;
   color: #444;
   cursor: pointer;
   border: 0;
