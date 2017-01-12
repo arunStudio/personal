@@ -2,7 +2,7 @@
   width: 1100px; }
 
 .cases-container {
-  background-color: #f1f1f1; }
+  background-color: #f5f5f5; }
 
 body {
   font-size: 13px;
@@ -149,6 +149,25 @@ body {
     color: #1caede;
     float: left;
     margin-top: 45px; }
+  body.home-page .find-more, body.case-study-page .find-more {
+    font-family: 'Dosis', Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-top: 50px;
+    float: left; }
+    body.home-page .find-more ul, body.case-study-page .find-more ul {
+      padding: 0; }
+      body.home-page .find-more ul li, body.case-study-page .find-more ul li {
+        display: inline;
+        line-height: 3em; }
+        body.home-page .find-more ul li span, body.case-study-page .find-more ul li span {
+          margin: 0 15px; }
+        body.home-page .find-more ul li a, body.case-study-page .find-more ul li a {
+          color: #1caede; }
+          body.home-page .find-more ul li a:hover, body.case-study-page .find-more ul li a:hover {
+            text-decoration: none; }
   body.home-page .sidekicks, body.case-study-page .sidekicks {
     max-width: 1100px;
     width: 100%;
