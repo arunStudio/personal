@@ -96,6 +96,9 @@ body {
 						margin-left: 50px;
 						font-weight: 300;
 						font-family: 'Dosis', Helvetica, sans-serif;
+						&:first-child {
+							margin-left: 0;
+						}
 						a, a:focus, a:active, a:active:focus, a:visited {
 							padding: 0px;
 							border-bottom: none !important;
@@ -325,6 +328,9 @@ body {
 				    		width: 75%;
 				    		line-height: 100px;
 				    		margin: 0;
+				    		white-space: nowrap;
+						    text-overflow: ellipsis;
+						    overflow: hidden;
 				    	}
 				    	.work-list p{
 				    		line-height: 100px;
@@ -717,7 +723,8 @@ body {
 					text-align: left;
 				}
 				.about-excerpt {
-					margin-top: 100px;
+					margin-top: 50px;
+					margin-bottom: 50px;
 				}
 			}
 			// featured casestudy list in home page
@@ -749,9 +756,17 @@ body {
 				.approach-section {
 					width: 90%;
 					.approach-box {
-						width: 60%;
-						margin: 40px auto;
+						width: 100%;
+						margin: 70px auto 0;
 						font-size: 12px;
+						p {
+							width: 60%;
+							margin: 0 auto;
+						}
+					}
+					.approach-box + .links-default {
+						margin: 0 auto;
+						width: 100%;
 					}
 				}
 			}

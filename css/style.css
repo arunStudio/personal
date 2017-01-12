@@ -76,6 +76,8 @@ body {
           margin-left: 50px;
           font-weight: 300;
           font-family: 'Dosis', Helvetica, sans-serif; }
+          body.home-page header.header nav.main-nav ul.list-inline li:first-child, body.case-study-page header.header nav.main-nav ul.list-inline li:first-child {
+            margin-left: 0; }
           body.home-page header.header nav.main-nav ul.list-inline li a, body.home-page header.header nav.main-nav ul.list-inline li a:focus, body.home-page header.header nav.main-nav ul.list-inline li a:active, body.home-page header.header nav.main-nav ul.list-inline li a:active:focus, body.home-page header.header nav.main-nav ul.list-inline li a:visited, body.case-study-page header.header nav.main-nav ul.list-inline li a, body.case-study-page header.header nav.main-nav ul.list-inline li a:focus, body.case-study-page header.header nav.main-nav ul.list-inline li a:active, body.case-study-page header.header nav.main-nav ul.list-inline li a:active:focus, body.case-study-page header.header nav.main-nav ul.list-inline li a:visited {
             padding: 0px;
             border-bottom: none !important;
@@ -260,7 +262,10 @@ body {
             float: left;
             width: 75%;
             line-height: 100px;
-            margin: 0; }
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden; }
           body.home-page .case-studies-list ul li.project-line a.project-info .work-list p, body.home-page .lab-personal ul li.project-line a.project-info .work-list p, body.home-page .approach-section ul li.project-line a.project-info .work-list p, body.case-study-page .case-studies-list ul li.project-line a.project-info .work-list p, body.case-study-page .lab-personal ul li.project-line a.project-info .work-list p, body.case-study-page .approach-section ul li.project-line a.project-info .work-list p {
             line-height: 100px;
             margin: 0;
@@ -560,7 +565,8 @@ body {
       body.home-page header.header nav.main-nav, body.case-study-page header.header nav.main-nav {
         text-align: left; }
       body.home-page header.header .about-excerpt, body.case-study-page header.header .about-excerpt {
-        margin-top: 100px; }
+        margin-top: 50px;
+        margin-bottom: 50px; }
     body.home-page .case-studies-list, body.home-page .lab-personal, body.case-study-page .case-studies-list, body.case-study-page .lab-personal {
       width: 90%; }
       body.home-page .case-studies-list ul li.project-line span, body.home-page .lab-personal ul li.project-line span, body.case-study-page .case-studies-list ul li.project-line span, body.case-study-page .lab-personal ul li.project-line span {
@@ -577,9 +583,15 @@ body {
     body.home-page .approach-container .approach-section, body.case-study-page .approach-container .approach-section {
       width: 90%; }
       body.home-page .approach-container .approach-section .approach-box, body.case-study-page .approach-container .approach-section .approach-box {
-        width: 60%;
-        margin: 40px auto;
+        width: 100%;
+        margin: 70px auto 0;
         font-size: 12px; }
+        body.home-page .approach-container .approach-section .approach-box p, body.case-study-page .approach-container .approach-section .approach-box p {
+          width: 60%;
+          margin: 0 auto; }
+      body.home-page .approach-container .approach-section .approach-box + .links-default, body.case-study-page .approach-container .approach-section .approach-box + .links-default {
+        margin: 0 auto;
+        width: 100%; }
     body.home-page .page-select a, body.case-study-page .page-select a {
       float: left;
       width: 100%;
