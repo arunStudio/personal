@@ -85,9 +85,14 @@ header.header {
 	.main-logo {
 		font-size: 1.5em;
 		font-weight: 400;
-		color: #ff5c5c;
 		font-family: 'bebasregular', Helvetica, sans-serif;
 		text-align: left;
+		a{
+			color: #ff5c5c;
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 }
 

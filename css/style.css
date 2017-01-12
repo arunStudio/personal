@@ -101,9 +101,12 @@ body {
       font-size: 1.5em;
       font-weight: 400;
       margin-top: 50px;
-      color: #ff5c5c;
       font-family: 'bebasregular', Helvetica, sans-serif;
       text-align: left; }
+      body.home-page header.header .main-logo a, body.case-study-page header.header .main-logo a {
+        color: #ff5c5c; }
+        body.home-page header.header .main-logo a:hover, body.case-study-page header.header .main-logo a:hover {
+          text-decoration: none; }
     body.home-page header.header .about-excerpt, body.case-study-page header.header .about-excerpt {
       margin-top: calc(50vh - 365px); }
       body.home-page header.header .about-excerpt .hero-title, body.case-study-page header.header .about-excerpt .hero-title {
@@ -147,11 +150,14 @@ body {
             body.home-page header.header .about-excerpt .excerpt-container .find-me ul li span, body.case-study-page header.header .about-excerpt .excerpt-container .find-me ul li span {
               margin: 0 15px; }
             body.home-page header.header .about-excerpt .excerpt-container .find-me ul li a, body.case-study-page header.header .about-excerpt .excerpt-container .find-me ul li a {
-              color: #1caede; }
+              color: #1caede;
+              transition: all .15s;
+              border-bottom: 1px solid transparent; }
               body.home-page header.header .about-excerpt .excerpt-container .find-me ul li a:hover, body.case-study-page header.header .about-excerpt .excerpt-container .find-me ul li a:hover {
                 text-decoration: none;
                 color: #ff5c5c;
-                border-bottom: 1px solid #ff5c5c; }
+                border-bottom: 1px solid #ff5c5c;
+                transition: all .25s; }
   body.home-page .links-default, body.case-study-page .links-default {
     font-family: 'Dosis', Helvetica, sans-serif;
     text-transform: uppercase;
@@ -161,11 +167,13 @@ body {
     color: #1caede;
     float: left;
     margin-top: 45px;
-    border-bottom: 1px solid transparent; }
+    border-bottom: 1px solid transparent;
+    transition: all .15s; }
     body.home-page .links-default:hover, body.case-study-page .links-default:hover {
       text-decoration: none;
       color: #ff5c5c;
-      border-bottom: 1px solid #ff5c5c; }
+      border-bottom: 1px solid #ff5c5c;
+      transition: all .25s; }
   body.home-page .find-more, body.case-study-page .find-more {
     font-family: 'Dosis', Helvetica, sans-serif;
     text-transform: uppercase;
@@ -182,11 +190,13 @@ body {
         body.home-page .find-more ul li span, body.case-study-page .find-more ul li span {
           margin: 0 15px; }
         body.home-page .find-more ul li a, body.case-study-page .find-more ul li a {
-          color: #1caede; }
+          color: #1caede;
+          transition: all .15s; }
           body.home-page .find-more ul li a:hover, body.case-study-page .find-more ul li a:hover {
             text-decoration: none;
             color: #ff5c5c;
-            border-bottom: 1px solid #ff5c5c; }
+            border-bottom: 1px solid #ff5c5c;
+            transition: all .25s; }
   body.home-page .sidekicks, body.case-study-page .sidekicks {
     max-width: 1100px;
     width: 100%;
@@ -374,11 +384,13 @@ body {
           body.home-page .contact-section .find-me ul li span, body.home-page .contact-section-small .find-me ul li span, body.case-study-page .contact-section .find-me ul li span, body.case-study-page .contact-section-small .find-me ul li span {
             margin: 0 15px; }
           body.home-page .contact-section .find-me ul li a, body.home-page .contact-section-small .find-me ul li a, body.case-study-page .contact-section .find-me ul li a, body.case-study-page .contact-section-small .find-me ul li a {
-            color: #1caede; }
+            color: #1caede;
+            transition: all .15s; }
             body.home-page .contact-section .find-me ul li a:hover, body.home-page .contact-section-small .find-me ul li a:hover, body.case-study-page .contact-section .find-me ul li a:hover, body.case-study-page .contact-section-small .find-me ul li a:hover {
               text-decoration: none;
               color: #ff5c5c;
-              border-bottom: 1px solid #ff5c5c; }
+              border-bottom: 1px solid #ff5c5c;
+              transition: all .25s; }
   body.home-page .footer-container, body.case-study-page .footer-container {
     background-color: #f1f1f1; }
     body.home-page .footer-container .contact-section-small, body.case-study-page .footer-container .contact-section-small {
@@ -583,6 +595,26 @@ body {
         background-color: #2e3c40; }
         body.home-page .page-select a:hover h2, body.case-study-page .page-select a:hover h2 {
           color: #ff5c5c; } }
+@media only screen and (max-width: 450px) {
+  body.home-page header.header .about-excerpt {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    body.home-page header.header .about-excerpt .hero-title h2 {
+      line-height: 26px; }
+    body.home-page header.header .about-excerpt .excerpt-container .find-me ul li {
+      list-style: none;
+      display: block; }
+      body.home-page header.header .about-excerpt .excerpt-container .find-me ul li span {
+        display: none; }
+  body.home-page .approach-container .approach-section .approach-box {
+    width: 100%; }
+  body.home-page header.header nav.main-nav ul.list-inline li {
+    margin-left: 0;
+    margin-right: 15px; }
+  body.home-page .contact-section {
+    background-image: none; }
+  body.home-page .links-default {
+    width: 100%; } }
 .color-bg {
   position: absolute;
   top: 0;

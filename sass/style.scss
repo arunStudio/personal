@@ -129,9 +129,14 @@ body {
 				font-size: 1.5em;
 				font-weight: 400;
 				margin-top: 50px;
-				color: $primary-color;
 				font-family: 'bebasregular', Helvetica, sans-serif;
 				text-align: left;
+				a{
+					color: $primary-color;
+					&:hover {
+						text-decoration: none;
+					}
+				}
 			}
 			.about-excerpt {
 				margin-top: calc(50vh - 365px);
@@ -184,10 +189,13 @@ body {
 						    	}
 						    	a {
 								    color: #1caede;
+							        transition: all .15s;
+							        border-bottom: 1px solid transparent;
 								    &:hover {
 								    	text-decoration: none;
 								    	color: $primary-color;
 								    	border-bottom: 1px solid $primary-color;
+							    	    transition: all .25s;
 								    }
 								}
 						    }
@@ -207,10 +215,12 @@ body {
 		    float: left;
 		    margin-top: 45px;
 		    border-bottom: 1px solid transparent;
+		    transition: all .15s;
 		    &:hover {
 		    	text-decoration: none;
 		    	color: $primary-color;
 		    	border-bottom: 1px solid $primary-color;
+		    	transition: all .25s;
 		    }
 		}
 		.find-more{
@@ -231,10 +241,12 @@ body {
 			    	}
 			    	a {
 					    color: #1caede;
+					    transition: all .15s;
 					    &:hover {
 					    	text-decoration: none;
 					    	color: $primary-color;
 					    	border-bottom: 1px solid $primary-color;
+					    	transition: all .25s;
 					    }
 					}
 			    }
@@ -466,10 +478,12 @@ body {
 				    	}
 				    	a {
 						    color: #1caede;
+						    transition: all .15s;
 						    &:hover {
 						    	text-decoration: none;
 						    	color: $primary-color;
 					    		border-bottom: 1px solid $primary-color;
+					    		transition: all .25s;
 						    }
 						}
 				    }
@@ -766,6 +780,39 @@ body {
 					}
 				}
 			}
+		}
+	}
+}
+
+// media query for width less than 450 px
+@media only screen and (max-width: 450px){
+	body.home-page {
+		header.header .about-excerpt {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			.hero-title h2{
+				line-height: 26px;
+			}
+			.excerpt-container .find-me ul li {
+				list-style: none;
+				display: block;
+				span {
+					display: none;
+				}
+			}
+		}
+		.approach-container .approach-section .approach-box{
+			width: 100%;
+		}
+		header.header nav.main-nav ul.list-inline li {
+			margin-left: 0;
+			margin-right: 15px;
+		}
+		.contact-section {
+			background-image: none;
+		}
+		.links-default {
+			width: 100%;
 		}
 	}
 }
