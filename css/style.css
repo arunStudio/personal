@@ -704,9 +704,6 @@ body {
     transition: transform cubic-bezier(0.55, 0, 0.1, 1) 0.5s; }
   .footer-side .footer__title {
     transition-delay: 1s; }
-    .footer-side .footer__title:before {
-      content: 'top -';
-      margin-right: 10px; }
   .footer-side .footer__subtitle {
     transition-delay: 1.05s; }
   .footer-side .footer__description {

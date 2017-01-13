@@ -917,10 +917,10 @@ body {
 	}
 	.footer__title {
 	    transition-delay: 1s;
-	    &:before {
-	    	content: 'top -';
-	    	margin-right: 10px;
-	    }
+	    // &:before {
+	    // 	content: 'top -';
+	    // 	margin-right: 10px;
+	    // }
 	}
 	.footer__subtitle {
 	    transition-delay: 1.05s;
