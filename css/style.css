@@ -606,7 +606,9 @@ body {
       body.home-page .page-select a:hover, body.case-study-page .page-select a:hover {
         background-color: #2e3c40; }
         body.home-page .page-select a:hover h2, body.case-study-page .page-select a:hover h2 {
-          color: #ff5c5c; } }
+          color: #ff5c5c; }
+    body.home-page .contact-section, body.case-study-page .contact-section {
+      background-image: none; } }
 @media only screen and (max-width: 450px) {
   body.home-page header.header .about-excerpt {
     margin-top: 50px;
