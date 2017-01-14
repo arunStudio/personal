@@ -497,6 +497,48 @@ body {
     body.home-page .case-study-container .wiserair-quotes, body.case-study-page .case-study-container .wiserair-quotes {
       background: url(../images/cases/wiserair/quotes.jpg) center center no-repeat;
       background-size: cover; }
+  body.home-page .art-container, body.case-study-page .art-container {
+    text-align: center; }
+    body.home-page .art-container h1.art-header, body.case-study-page .art-container h1.art-header {
+      font-size: 3.5em;
+      color: #2e3c40;
+      text-transform: uppercase;
+      font-family: 'bebasregular', Helvetica, sans-serif;
+      margin: 70px 0;
+      word-spacing: .15em; }
+    body.home-page .art-container h2.art-excerpt, body.case-study-page .art-container h2.art-excerpt {
+      font-family: 'Martel', Georgia, serif;
+      font-size: 1.7em;
+      line-height: 1.5em;
+      color: #383838;
+      margin: 25px auto 100px;
+      font-weight: lighter;
+      max-width: 1100px;
+      width: 100%; }
+    body.home-page .art-container .art-filter, body.case-study-page .art-container .art-filter {
+      text-align: left;
+      margin-bottom: 50px; }
+      body.home-page .art-container .art-filter .btn-primary, body.case-study-page .art-container .art-filter .btn-primary {
+        background-color: transparent;
+        color: #000;
+        border: transparent;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+        margin-right: 50px;
+        font-weight: 300;
+        font-family: 'Dosis', Helvetica, sans-serif;
+        padding: 0; }
+        body.home-page .art-container .art-filter .btn-primary:active, body.home-page .art-container .art-filter .btn-primary:active:focus, body.home-page .art-container .art-filter .btn-primary:focus, body.case-study-page .art-container .art-filter .btn-primary:active, body.case-study-page .art-container .art-filter .btn-primary:active:focus, body.case-study-page .art-container .art-filter .btn-primary:focus {
+          outline: transparent;
+          background: transparent;
+          border: transparent;
+          box-shadow: none;
+          font-weight: 600;
+          text-decoration: overline;
+          color: #ff5c5c; }
+    body.home-page .art-container .art-gallery li, body.case-study-page .art-container .art-gallery li {
+      list-style: none; }
   body.home-page .page-select, body.case-study-page .page-select {
     margin-bottom: 50px;
     margin-top: 50; }
