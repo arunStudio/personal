@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Arun Jacob - Painting &amp; Sketches</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <!-- user styles -->
+    <link href="art-style.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500|Roboto:100,100i,300,300i,400,400i" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      .art-page.kids-painting:after{
+        background-image: url(../images/paintings/budhist-kids-lg.jpg);
+      }
+    </style>
+  </head>
+  <body class="art-page kids-painting">
+
+  <!-- Preloader content -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- preloader -END -->
+
+
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-md-12">
+          <div class="paint-container">
+            <img class="img-responsive" src="../images/paintings/budhist-kids-lg.jpg">
+            <div class="img-details">Budhist Kids playing ball - Watercolor on Moulin DuRoy Paper</div>
+            <!-- next pic arrow -->
+            <a href="theyam.html" class="next-art">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 5 9" style="enable-background:new 0 0 5 9;" xml:space="preserve"><polygon points="1.1,2.5 2.5,0.8 3.9,2.5"></polygon><path d="M2.5,1.6L2.9,2H2.1L2.5,1.6 M2.5,0L0,3h5L2.5,0L2.5,0z"></path><polygon points="2,3 2,9 3,9 3,3 "></polygon></svg>
+            </a>
+            <!-- previous pic arrow -->
+            <a href="kids.html" class="previous-art">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 5 9" style="enable-background:new 0 0 5 9;" xml:space="preserve"><polygon points="1.1,2.5 2.5,0.8 3.9,2.5"></polygon><path d="M2.5,1.6L2.9,2H2.1L2.5,1.6 M2.5,0L0,3h5L2.5,0L2.5,0z"></path><polygon points="2,3 2,9 3,9 3,3 "></polygon></svg>
+            </a>
+
+            <!-- back home icon -->
+            <a class="back-arthome" href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- preloader jqery code -->
+    <script type="text/javascript">
+      //<![CDATA[
+      $(window).on('load', function() { // makes sure the whole site is loaded 
+          $('#status').fadeOut(); // will first fade out the loading animation 
+          $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+          $('body').delay(350).css({'overflow':'visible'});
+      });
+
+
+      $('#home a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+.art-page {
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+}
+.art-page.kids-painting:after{
+  content: " ";
+  background-position: center;
+  opacity: .35;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+}
+.paint-container {
+  width: auto;
+  height: auto;
+  background-color: black;
+  z-index: 999;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.paint-container img {
+  max-width: 86vw;
+  max-height: 86vh;
+  position: relative;
+  z-index: 9999;
+  margin: 5vh auto 9vh;
+  border: 15px solid white;
+  box-shadow: 0px 0px 30px 5px rgba(0,0,0,.5);
+  border-radius: 5px;
+}
+.paint-container img:after {
+  content: " ";
+}
+
+.img-details {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Dosis', Helvetica, sans-serif;
+  margin-top: 0;
+  letter-spacing: 0.15em;
+  position: fixed;
+  bottom: 4vh;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+}
+
+/* next art */
+a.next-art, a.previous-art {
+  position: fixed;
+  bottom: 4vh;
+  z-index: 999;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Dosis', Helvetica, sans-serif;
+  margin-top: 0;
+  letter-spacing: 0.15em;
+  opacity: .5;
+  transition: all .25s;
+  text-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+a.next-art {
+  right: 3vw
+}
+.next-art svg {
+  transform: rotate(90deg);
+  fill: white;
+  width: 10px;
+  position: absolute;
+  right: 0;
+}
+.next-art:before {
+  content: "next painting";
+}
+a.next-art:hover,
+a.previous-art:hover {
+  opacity: 1;
+  transition: all .25s;
+  text-decoration: none;
+  color: #ff5c5c;
+}
+
+a.next-art:hover svg,
+a.previous-art:hover svg{
+  fill: #ff5c5c;
+}
+
+/* previous art */
+a.previous-art {
+  left: 3vw;
+}
+
+.previous-art svg {
+  transform: rotate(-90deg);
+  fill: white;
+  width: 10px;
+  position: absolute;
+  left: 0;
+}
+.previous-art:before {
+  content: "previous painting";
+}
+
+.back-arthome {
+  color: white;
+  position: fixed;
+  top: 2vh;
+  left: 2vw;
+  z-index: 9999;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Dosis', Helvetica, sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.back-arthome .glyphicon {
+  top: 0;
+}
+
+.back-arthome:after {
+  content: "back";
+  margin-left: 10px;
+}
+
+.back-arthome:hover {
+  color: #ff5c5c;
+  text-decoration: none;
+}

@@ -683,9 +683,30 @@ body {
 				    }
 				}
 			}
-			.art-gallery {
-				li {
-					list-style: none;
+			.artbox {
+				border: 5px solid transparent;
+				margin-bottom: 50px;
+				display: block;
+				transition: all .15s;
+				box-sizing: border-box;
+				overflow: hidden;
+				border: 7px solid rgba(255, 255, 255, 0);
+				box-shadow: 0 0 5px rgba(0,0,0,0);
+				img {
+					max-width: 100%;
+					transition: all .25s;
+				}
+				&:hover{
+					border: 7px solid #fff;
+					box-shadow: 0 0 5px rgba(0,0,0,.5);
+					transition: all .15;
+					box-sizing: border-box;
+					img {
+					  -moz-transform: scale(1.15);
+					  -webkit-transform: scale(1.15);
+					  transform: scale(1.15);
+					  transition: all .25s;
+					}
 				}
 			}
 		}

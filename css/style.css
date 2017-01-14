@@ -537,8 +537,28 @@ body {
           font-weight: 600;
           text-decoration: overline;
           color: #ff5c5c; }
-    body.home-page .art-container .art-gallery li, body.case-study-page .art-container .art-gallery li {
-      list-style: none; }
+    body.home-page .art-container .artbox, body.case-study-page .art-container .artbox {
+      border: 5px solid transparent;
+      margin-bottom: 50px;
+      display: block;
+      transition: all .15s;
+      box-sizing: border-box;
+      overflow: hidden;
+      border: 7px solid rgba(255, 255, 255, 0);
+      box-shadow: 0 0 5px transparent; }
+      body.home-page .art-container .artbox img, body.case-study-page .art-container .artbox img {
+        max-width: 100%;
+        transition: all .25s; }
+      body.home-page .art-container .artbox:hover, body.case-study-page .art-container .artbox:hover {
+        border: 7px solid #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transition: all .15;
+        box-sizing: border-box; }
+        body.home-page .art-container .artbox:hover img, body.case-study-page .art-container .artbox:hover img {
+          -moz-transform: scale(1.15);
+          -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+          transition: all .25s; }
   body.home-page .page-select, body.case-study-page .page-select {
     margin-bottom: 50px;
     margin-top: 50; }
