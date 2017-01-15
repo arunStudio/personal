@@ -539,7 +539,7 @@ body {
           color: #ff5c5c; }
     body.home-page .art-container .artbox, body.case-study-page .art-container .artbox {
       border: 5px solid transparent;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       display: block;
       transition: all .15s;
       box-sizing: border-box;
