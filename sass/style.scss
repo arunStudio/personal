@@ -41,6 +41,7 @@ body {
 	    background-position:center;
 	    margin:-150px 0 0 -200px; /* is width and height divided by two */
 	    background-size: contain;
+	    left: 0;
 	    &:after {
 			content: 'Loading...';
 		    text-align: center;
