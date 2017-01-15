@@ -46,7 +46,8 @@ body {
       margin-left: -3px;
       font-family: 'bebasregular', Helvetica, sans-serif;
       color: #2e3c40;
-      word-spacing: .15em; }
+      word-spacing: .15em;
+      left: 0; }
   body ::selection {
     background: #fcf6c3;
     color: #ff5c5c; }
