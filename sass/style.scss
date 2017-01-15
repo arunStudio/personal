@@ -41,7 +41,6 @@ body {
 	    background-position:center;
 	    margin:-150px 0 0 -200px; /* is width and height divided by two */
 	    background-size: contain;
-	    left: 0;
 	    &:after {
 			content: 'Loading...';
 		    text-align: center;
@@ -55,6 +54,7 @@ body {
 		    font-family: 'bebasregular', Helvetica, sans-serif;
 		    color: #2e3c40;
 		    word-spacing: .15em;
+		    left: 0;
 		}
 	}
 
