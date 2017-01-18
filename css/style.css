@@ -223,6 +223,23 @@ body {
       line-height: 1.8em;
       color: #000;
       margin: 20px 0 50px 0; }
+  body.home-page .tools-box, body.case-study-page .tools-box {
+    font-family: 'Dosis', Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    color: #000;
+    padding: 50px 50px 30px;
+    background-color: #1b1b1b;
+    color: #fff;
+    margin-top: 100px; }
+    body.home-page .tools-box ul li, body.case-study-page .tools-box ul li {
+      list-style: none;
+      display: inline;
+      line-height: 3em; }
+      body.home-page .tools-box ul li span, body.case-study-page .tools-box ul li span {
+        margin: 0 15px; }
   body.home-page .case-studies-list, body.home-page .lab-personal, body.home-page .approach-section, body.case-study-page .case-studies-list, body.case-study-page .lab-personal, body.case-study-page .approach-section {
     max-width: 1100px;
     width: 100%;
