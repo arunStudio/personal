@@ -84,6 +84,7 @@ body {
 				min-height: 80px !important;
 				height: 80px !important;
 			}
+			// Video styles
 			video {
 			  position: absolute;
 			  top: 50%;
@@ -97,7 +98,7 @@ body {
 			  -moz-transform: translateX(-50%) translateY(-50%);
 			  -webkit-transform: translateX(-50%) translateY(-50%);
 			  transform: translateX(-50%) translateY(-50%);
-			  opacity: .15;
+			  opacity: .1;
 			}
 			// main navigation styles
 			nav.main-nav {
@@ -161,6 +162,7 @@ body {
 				margin-top: calc(50vh - 365px);
 				.hero-title{
 					height: 120px;
+					background: rgba(256, 256, 256, .6);
 					h1 {
 						font-size: 4.5em;
 						font-weight: 700;
@@ -181,6 +183,8 @@ body {
 					}
 				}
 				.excerpt-container {
+					background: rgba(256, 256, 256, .6);
+					margin-top: 30px;
 					p.hero-descr {
 						font-family: 'Martel', serif;
 						font-size: 2em;
