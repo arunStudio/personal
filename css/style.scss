@@ -98,7 +98,7 @@ body {
 			  -moz-transform: translateX(-50%) translateY(-50%);
 			  -webkit-transform: translateX(-50%) translateY(-50%);
 			  transform: translateX(-50%) translateY(-50%);
-			  opacity: .2;
+			  //opacity: .2;
 			}
 			// main navigation styles
 			nav.main-nav {
@@ -122,9 +122,10 @@ body {
 							transition: all .15s;
 							line-height: 3em;
 							background: none;
+							color: $white;
 							&:after {
 								content: '';
-							    border-bottom: 1px solid rgba(46,60,64,0) !important;
+							    border-bottom: 1px solid rgba(255,255,255,0) !important;
 							    display: block;
 							    transition: all .15s;
 							    position: relative;
@@ -136,7 +137,7 @@ body {
 							transition: all .15s;
 							&:after {
 								content: '';
-							    border-bottom: 1px solid rgba(46,60,64,1) !important;
+							    border-bottom: 1px solid rgba(255,255,255,1) !important;
 							    transition: all .15s;
 							    top: 0;
 							}
@@ -162,20 +163,20 @@ body {
 				margin-top: calc(50vh - 365px);
 				.hero-title{
 					height: 120px;
-					background: rgba(256, 256, 256, .6);
+					//background: rgba(256, 256, 256, .6);
 					h1 {
 						font-size: 4.5em;
 						font-weight: 700;
 						margin-bottom: 15px;
 						margin-left: -3px;
 						font-family: 'bebasregular', Helvetica, sans-serif;
-						color: $primary-grey;
+						color: $white;
 						word-spacing: .15em;
 					}
 					h2 {
 						text-transform: uppercase;
 						font-size: 13px;
-						font-weight: 400;
+						font-weight: 500;
 						color: $primary-color;
 						font-family: 'Dosis', Helvetica, sans-serif;
 						margin-top: 0;
@@ -183,17 +184,17 @@ body {
 					}
 				}
 				.excerpt-container {
-					background: rgba(256, 256, 256, .6);
+					//background: rgba(256, 256, 256, .6);
 					margin-top: 30px;
 					p.hero-descr {
 						font-family: 'Martel', serif;
 						font-size: 2em;
 						line-height: 1.8em;
-						color: #6b757d;
+						color: #bbb;
 						margin: 35px 0 50px 0;
 						.highlighted {
 							font-weight: 600;
-							color: $black;
+							color: $white;
 						}
 					}
 					.find-me{
@@ -202,6 +203,7 @@ body {
 					    font-size: 1.1em;
 					    font-weight: 500;
 					    letter-spacing: 0.15em;
+					    color: #bbb;
 					    ul {
 					    	padding: 0;
 					    	li{
