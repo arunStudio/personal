@@ -89,7 +89,6 @@ body.home-page header.header video, body.case-study-page header.header video {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  opacity: 0.2;
 }
 body.home-page header.header nav.main-nav, body.case-study-page header.header nav.main-nav {
   text-align: right;
@@ -115,10 +114,11 @@ body.home-page header.header nav.main-nav ul.list-inline li a, body.home-page he
   transition: all 0.15s;
   line-height: 3em;
   background: none;
+  color: #fff;
 }
 body.home-page header.header nav.main-nav ul.list-inline li a:after, body.home-page header.header nav.main-nav ul.list-inline li a:focus:after, body.home-page header.header nav.main-nav ul.list-inline li a:active:after, body.home-page header.header nav.main-nav ul.list-inline li a:active:focus:after, body.home-page header.header nav.main-nav ul.list-inline li a:visited:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:focus:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:active:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:active:focus:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:visited:after {
   content: "";
-  border-bottom: 1px solid rgba(46, 60, 64, 0) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0) !important;
   display: block;
   transition: all 0.15s;
   position: relative;
@@ -130,7 +130,7 @@ body.home-page header.header nav.main-nav ul.list-inline li a:hover, body.case-s
 }
 body.home-page header.header nav.main-nav ul.list-inline li a:hover:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:hover:after {
   content: "";
-  border-bottom: 1px solid #2e3c40 !important;
+  border-bottom: 1px solid white !important;
   transition: all 0.15s;
   top: 0;
 }
@@ -152,7 +152,6 @@ body.home-page header.header .about-excerpt, body.case-study-page header.header 
 }
 body.home-page header.header .about-excerpt .hero-title, body.case-study-page header.header .about-excerpt .hero-title {
   height: 120px;
-  background: rgba(255, 255, 255, 0.6);
 }
 body.home-page header.header .about-excerpt .hero-title h1, body.case-study-page header.header .about-excerpt .hero-title h1 {
   font-size: 4.5em;
@@ -160,32 +159,31 @@ body.home-page header.header .about-excerpt .hero-title h1, body.case-study-page
   margin-bottom: 15px;
   margin-left: -3px;
   font-family: "bebasregular", Helvetica, sans-serif;
-  color: #2e3c40;
+  color: #fff;
   word-spacing: 0.15em;
 }
 body.home-page header.header .about-excerpt .hero-title h2, body.case-study-page header.header .about-excerpt .hero-title h2 {
   text-transform: uppercase;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
   color: #ff5c5c;
   font-family: "Dosis", Helvetica, sans-serif;
   margin-top: 0;
   letter-spacing: 0.15em;
 }
 body.home-page header.header .about-excerpt .excerpt-container, body.case-study-page header.header .about-excerpt .excerpt-container {
-  background: rgba(255, 255, 255, 0.6);
   margin-top: 30px;
 }
 body.home-page header.header .about-excerpt .excerpt-container p.hero-descr, body.case-study-page header.header .about-excerpt .excerpt-container p.hero-descr {
   font-family: "Martel", serif;
   font-size: 2em;
   line-height: 1.8em;
-  color: #6b757d;
+  color: #bbb;
   margin: 35px 0 50px 0;
 }
 body.home-page header.header .about-excerpt .excerpt-container p.hero-descr .highlighted, body.case-study-page header.header .about-excerpt .excerpt-container p.hero-descr .highlighted {
   font-weight: 600;
-  color: #000;
+  color: #fff;
 }
 body.home-page header.header .about-excerpt .excerpt-container .find-me, body.case-study-page header.header .about-excerpt .excerpt-container .find-me {
   font-family: "Dosis", Helvetica, sans-serif;
@@ -193,6 +191,7 @@ body.home-page header.header .about-excerpt .excerpt-container .find-me, body.ca
   font-size: 1.1em;
   font-weight: 500;
   letter-spacing: 0.15em;
+  color: #bbb;
 }
 body.home-page header.header .about-excerpt .excerpt-container .find-me ul, body.case-study-page header.header .about-excerpt .excerpt-container .find-me ul {
   padding: 0;
