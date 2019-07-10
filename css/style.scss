@@ -106,6 +106,11 @@ body {
 			// main navigation styles
 			nav.main-nav {
 				text-align: right;
+				&.home-links > ul.list-inline > li {
+					a, a:focus, a:active, a:active:focus, a:visited{
+						color: $white !important;
+					}
+				}
 				ul.list-inline{
 					display: inline-block;
 					margin: 50px 0 30px;
@@ -125,7 +130,7 @@ body {
 							transition: all .15s;
 							line-height: 3em;
 							background: none;
-							color: $white;
+							color: $primary-grey;
 							&:after {
 								content: '';
 							    border-bottom: 1px solid rgba(255,255,255,0) !important;

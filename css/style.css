@@ -95,6 +95,9 @@ body.home-page header.header video, body.case-study-page header.header video {
 body.home-page header.header nav.main-nav, body.case-study-page header.header nav.main-nav {
   text-align: right;
 }
+body.home-page header.header nav.main-nav.home-links > ul.list-inline > li a, body.home-page header.header nav.main-nav.home-links > ul.list-inline > li a:focus, body.home-page header.header nav.main-nav.home-links > ul.list-inline > li a:active, body.home-page header.header nav.main-nav.home-links > ul.list-inline > li a:active:focus, body.home-page header.header nav.main-nav.home-links > ul.list-inline > li a:visited, body.case-study-page header.header nav.main-nav.home-links > ul.list-inline > li a, body.case-study-page header.header nav.main-nav.home-links > ul.list-inline > li a:focus, body.case-study-page header.header nav.main-nav.home-links > ul.list-inline > li a:active, body.case-study-page header.header nav.main-nav.home-links > ul.list-inline > li a:active:focus, body.case-study-page header.header nav.main-nav.home-links > ul.list-inline > li a:visited {
+  color: #fff !important;
+}
 body.home-page header.header nav.main-nav ul.list-inline, body.case-study-page header.header nav.main-nav ul.list-inline {
   display: inline-block;
   margin: 50px 0 30px;
@@ -116,7 +119,7 @@ body.home-page header.header nav.main-nav ul.list-inline li a, body.home-page he
   transition: all 0.15s;
   line-height: 3em;
   background: none;
-  color: #fff;
+  color: #2e3c40;
 }
 body.home-page header.header nav.main-nav ul.list-inline li a:after, body.home-page header.header nav.main-nav ul.list-inline li a:focus:after, body.home-page header.header nav.main-nav ul.list-inline li a:active:after, body.home-page header.header nav.main-nav ul.list-inline li a:active:focus:after, body.home-page header.header nav.main-nav ul.list-inline li a:visited:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:focus:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:active:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:active:focus:after, body.case-study-page header.header nav.main-nav ul.list-inline li a:visited:after {
   content: "";
